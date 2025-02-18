@@ -1,12 +1,129 @@
 :root {
-  --blue: #2a3663;
+  --blue-1: #2a3663;
+  --purple: #4D37CD;
+  --light-blue: #637AA7;
+  --blue-grey: #98A1B2;
+  --light-gold: #CEA84E;
   --gold: #ac8435;
-  --white1: #ebe1d0;
+  --creme: #ebe1d0;
+  --white: #FFF8F4;
+  --white-casse: #FFFCF6;
   --white2: #d6c9b3;
   --light-creme: #f7f2e9;
   --lightgrey: #9b968f;
   --black1: #2b292b;
   --black2: #403c34;
   --titleFont: "Cinzel Decorative", serif;
-  --txt: "Gabarito", serif;
+  --padding-sm-btn: 18px;
+  --padding-ctc-btn: 15px 20px;
+  --padding-header: 8px 20px;
+  --padding-bottom-50: 0 0 50px 0;
+  --font-txt: "Raleway", serif;
+  --font-size-ctc-btn: 20px;
+  --extra-bold: 800;
+
+}
+
+* {
+  font-family: var(--font-txt);
+}
+
+header > img {
+  width: 100%;
+  height: 100%;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.navbar {
+  padding: 0 !important;
+}
+
+#nav {
+  display: flex;
+  padding: var(--padding-header);
+  align-items: center !important;
+}
+
+#nav-left-container {
+  display: flex;
+  align-items: center !important;
+  max-width: 140px;
+}
+
+#nav-right-container {
+  position: relative;
+  left: -5%;
+  align-items: center !important;
+  margin-bottom: 0;
+}
+
+.mr-xs {
+  margin-right: 10px !important;
+}
+
+.nav-item {
+  padding: 0 !important;
+}
+
+.dark {
+  color: var(--black1) !important;
+}
+
+.icon-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px !important;
+  height: 50px;
+  border-radius: 100%;
+  background-color: var(--white);
+  padding: 0 !important;
+}
+
+.profile-pic-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 50px !important;
+  height: 50px;
+  border-radius: 100%;
+  padding: 0 !important;
+  border: 3px solid var(--white) !important;
+}
+
+.profile-pic-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 100%;
+  object-position: 30% 10%;
+}
+
+section {
+  padding: var(--padding-bottom-50);
+}
+
+h2 {
+  text-transform: uppercase;
+  width: 80%;
+  border-bottom: 1px solid;
+}
+
+.social {
+  width: 60px !important;
+  min-height: 60px !important;
+  background-color: var(--purple) !important;
+  color: var(--white);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+
+.social-logo {
+  transform: scale(2);
 }

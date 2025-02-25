@@ -389,7 +389,7 @@ li:last-child {
   display: flex;
   justify-content: center !important;
   align-items: center;
-  width: 768px;
+  width: 100%;
 }
 
 .social {
@@ -518,7 +518,7 @@ li > .footer-links {
   /* CASE STUDIES */
 
   #case-study {
-    width: 85%;
+    width: 90%;
     margin: 0 auto 50px auto;
   }
 
@@ -527,8 +527,9 @@ li > .footer-links {
     width: 90%;
   }
 
-  #case-study > .card {
-    max-width: 80%;
+  .card-link-container > .card {
+    max-width: 75%;
+    margin: 15px auto;
   }
 
   /* ITERATION */
@@ -583,5 +584,47 @@ li > .footer-links {
 
 @media only screen and (min-width: 1024px) {
 
+  .img-lg-container img {
+    width: 400px;
+    height: 400px;
+  }
 
+  /* CASE STUDY */
+
+  .card-link-container > .card {
+    max-width: 100%;
+  }
+
+  .card-link-container {
+    display: grid;
+    grid-template-columns: 39vw 39vw;
+    grid-template-rows: 200px 200px;
+    gap: 20px;
+    align-items: center;
+  }
+  
+  #delia-card, #engie-card, #loreal-card {
+      width: 100% !important;
+      height: 100%;
+  }
+
+  /* ITERATION LG*/
+  #iteration-card-container {
+    display: grid;
+    grid-template-columns: repeat(3, 316.67px);
+    grid-template-rows: 230px;
+    grid-gap: 20px !important;
+    margin-bottom: var(--mb-30);
+  }
+
+  #content-card, #functionality-card, #design-card {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--white);
+    width: 100% !important;
+  }
+
+  #content-card, #functionality-card {
+    height: 170px;
+}
 }

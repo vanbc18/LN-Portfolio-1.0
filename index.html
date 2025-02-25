@@ -56,7 +56,7 @@
   </header>
   <!-- main -->
   <main>
-    <section id="hero-section" class="row">
+    <section id="hero-section" class="row justify-content-center">
       <h1 class="text-center col-lg-6 p-0 m-0">
         <span class="grey-txt d-block">Hello!</span>
         <span class="txt-30">Je suis </span>
@@ -69,12 +69,13 @@
         <span class="hero-title5 d-block" data-content="Designer">Designer</span>
         <span class="normal d-block txt-60">Senior</span>
       </h1>
-      <div class="img-container d-none d-lg-inline-block col-lg-6">
-        <img src="images/Profile-Picture.png" alt="">
-      </div>
+      <span class="d-none d-lg-block col-lg-5 align-content-center img-lg-container">
+        <img src="images/profile-pic-lg.jpg" alt="">
+      </span>
     </section>
     <section id="case-study">
-      <h2>études de cas</h2>
+      <h2 class="d-lg-block">études de cas</h2>
+      <div class="card-link-container">
       <a class="card" id="delia-card">
         <div class="row">
           <div class="col-7 p-0">
@@ -96,7 +97,7 @@
         <div class="row">
           <div class="col-7 p-0">
             <div class="card-body">
-              <h3 class="card-title">App <br> Engie</h3>
+              <h3 class="card-title">App <br class="d-lg-none"> Engie</h3>
               <p class="card-txt d-none d-md-block">
                 Augmenter l'usage <br>récurrent
               </p>
@@ -113,7 +114,7 @@
         <div class="row">
           <div class="col-7 p-0">
             <div class="card-body">
-              <h3 class="card-title">Loyalty <br> L'Oréal</h3>
+              <h3 class="card-title">Loyalty <br class="d-lg-none"> L'Oréal</h3>
               <p class="card-txt d-none d-md-block">
                 Construire un logiciel <br> adapté à ses employés
               </p>
@@ -126,6 +127,7 @@
           </div>
         </div>
       </a>
+    </div>
     </section>
     <section id="future-iteration">
       <h2>itération 1.1 <br class="d-md-none">du site <br class="d-md-none">prévisionnel</h2>

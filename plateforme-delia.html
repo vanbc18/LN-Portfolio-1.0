@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Étude de cas - Plateforme Délia</title>
+    <meta name="description" content="J'accompagne les entreprises dans leur méthodes centrées
+    sur l'utilisateur. J'effectue la recherche utilisateur, l'idéation et la conception d'interfaces.">
+    <meta name="keywords"
+        content="Product Designer, UX/UI, Freelance, UX UI Designer, Agence, Digital, Numérique,Interface, Projet Agence Digitale, Facilitation, Consulting, Atelier, Workshop, Design Thinking, Design Sprint, UX Research, Recherche Utilisateur">
+    <meta name="author" content="Ladycode">
+    <link rel="canonical" href="https://www.helene-ramette.com">
+    <link rel="stylesheet" href="style-delia.css">
+    <!-- google font import-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <!--Swiper JS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- Fontawesome -->
+    <script src="https://kit.fontawesome.com/dc5025cb56.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar fixed-top">
+            <div class="container" id="nav-container">
+                <div id="nav-left-container" class="align-content-center">
+                    <div id="nav-title">
+                        <img src="images/btn-back.png" alt="">
+                    </div>
+                </div>
+                <ul class="row" id="nav-right-container">
+                    <li class="nav-item justify-content-center d-flex icon-container">
+                        <a class="nav-link" aria-current="page" href="#">
+                            <span class="d-none d-md-inline-block ctc-word">Contact </span>
+                            <i class="fa-brands fa-whatsapp d-inline-block fa-2x outline"></i>
+                        </a>
+                    </li>
+                    <li class="col nav-item justify-content-end d-flex">
+                        <a class="nav-link" href="#about">
+                            <div class="profile-pic-container">
+                                <img src="images/Profile Picture.jpg" alt="">
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section id="delia-hero-section">
+            <h1 class="hero-title text-uppercase">
+                <img src="images/delia-title.svg" alt="Plateforme Delia écrit avec des jeux d'ombres">
+            </h1>
+            <p class="hero-txt">
+                Du papier au digital : <br>
+                <span class="fw-bold">Accélérer & simplifier <br>les procédures</span>
+            </p>
+            <div class="logo-container row">
+                <img src="images/logo-bnf.png" alt="" class="col-3">
+                <img src="images/Logo-cnc.png" alt="" class="col-3">
+                <img src="images/Logo-ministere-culture.png" alt="" class="col-3">
+            </div>
+        </section>
+        <div data-bs-spy="scroll" data-bs-target="#navbar-footer" data-bs-root-margin="0px 0px -40%"
+            data-bs-smooth-scroll="true" class="rounded-2" tabindex="0">
+            <section id="contexte" data-content="CONTEXTE">
+                <p class="mb-0 text">Avant Delia, un professionnel du cinéma devait
+                    <span class="fw-bold">obligatoirement</span> remplir <span class="fw-bold">2 formulaires
+                        papier</span>,
+                    puis envoyer ses <span class="fw-bold">documents par courrier</span>,
+                    à la Bibliothèque Nationale de France et
+                    au Centre National du Cinéma, sans se tromper.
+                </p>
+                <!--LIEN DELIA-->
+                <a href="#" class="text-decoration-none rounded col-md-4" id="delia-link">Lien vers Delia
+                    <img src="images/go-to-icon.svg" alt="" class="img-fluid">
+                </a>
+                <div class="swiper-md d-none d-md-block" data-swiper-parallax="500">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide">
+                            <article class="card">
+                                <h3 class="card-title"><img src="images/crosshair.svg" alt="icône d'un viseur"> Cibles
+                                </h3>
+                                <div class="card-body">
+                                    <p class="card-text m-0">Utilisateurs B2B</p>
+                                    <ul id="cibles-list">
+                                        <li class="m-0">Pro du film</li>
+                                        <li class="m-0">Employés BnF / CNC</li>
+                                    </ul>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="swiper-slide">
+                            <article class="card">
+                                <h3 class="card-title"><img src="images/users.svg" alt=""> Rôles</h3>
+                                <p class="m-0">HR: Lead UX designer</p>
+                                <p class="m-0">HR: Lead UI designer</p>
+                                <ul id="roles-list">
+                                    <li class="m-0">2 designers</li>
+                                    <li class="m-0">1 account manager</li>
+                                    <li class="m-0">3 intervenants métier</li>
+                                    <li class="m-0 text-nowrap">1 directeur technique client</li>
+                                    <li class="m-0">1 chef de projet client</li>
+                                </ul>
+                            </article>
+                        </div>
+                        <div class="swiper-slide">
+                            <article class="card">
+                                <h3 class="card-title m-0"><img src="images/demarche.svg" alt="">Démarches</h3>
+                                <ul id="demarches-list" class="p-0">
+                                    <li class="m-0">Analyse de documents</li>
+                                    <li class="m-0 text-nowrap">2 Ateliers de Co-Conception</li>
+                                    <li class="m-0">Wireframing</li>
+                                    <li class="m-0">UI Design</li>
+                                    <li class="m-0">Test Prototype Haute Def.</li>
+                                </ul>
+                            </article>
+                        </div>
+                        <div class="swiper-slide">
+                            <article class="card">
+                                <h3 class="card-title m-0"><img src="images/archive.svg" alt="">Livrables</h3>
+                                <ul id="livrables-list" class="p-0">
+                                    <li class="m-0">Service Blueprint</li>
+                                    <li class="m-0">Arborescence</li>
+                                    <li class="m-0">Propositions Wireframe</li>
+                                    <li class="m-0">Propositions UI Design</li>
+                                    <li class="m-0">Protoype Haute Def.</li>
+                                    <li class="m-0">Protocole de test</li>
+                                </ul>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+                <article class="card d-md-none">
+                    <h3 class="card-title"><img src="images/crosshair.svg" alt="icône d'un viseur"> Cibles</h3>
+                    <div class="card-body">
+                        <p class="card-text">Utilisateurs B2B</p>
+                        <ul id="cibles-list">
+                            <li>Pro du film</li>
+                            <li>Employés BnF / CNC</li>
+                        </ul>
+                    </div>
+                </article>
+                <article class="card d-md-none">
+                    <h3 class="card-title"><img src="images/users.svg" alt=""> Rôles</h3>
+                    <p>HR: Lead UX designer</p>
+                    <p>HR: Lead UI designer</p>
+                    <ul id="roles-list">
+                        <li class="mt-0">2 designers</li>
+                        <li>1 account manager</li>
+                        <li>3 intervenants métier</li>
+                        <li>1 directeur technique client</li>
+                        <li>1 chef de projet client</li>
+                    </ul>
+                </article>
+                <article class="card d-md-none">
+                    <h3 class="card-title"><img src="images/demarche.svg" alt="">Démarches</h3>
+                    <ul id="demarches-list" class="p-0">
+                        <li class="mt-0">Analyse de documents</li>
+                        <li>2 Ateliers de Co-Conception</li>
+                        <li>Wireframing</li>
+                        <li>UI Design</li>
+                        <li>Test Prototype Haute Def.</li>
+                    </ul>
+                </article>
+                <article class="card d-md-none">
+                    <h3 class="card-title"><img src="images/archive.svg" alt="">Livrables</h3>
+                    <ul id="livrables-list" class="p-0">
+                        <li class="mt-0">Service Blueprint</li>
+                        <li>Arborescence</li>
+                        <li>Propositions Wireframe</li>
+                        <li>Propositions UI Design</li>
+                        <li>Protoype Haute Def.</li>
+                        <li>Protocole de test</li>
+                    </ul>
+                </article>
+            </section>
+            <section id="objectifs" data-content="OBJECTIFS">
+                <article>
+                    <h2>Accélérer et faciliter le dépôt légal</h2>
+                    <ol>
+                        <li>Fusionner les dépôts</li>
+                        <li>Digitaliser les processus</li>
+                        <li>Accélérer les démarches</li>
+                        <li>Limiter les erreurs</li>
+                    </ol>
+                </article>
+            </section>
+            <section id="demarche">
+                <h2 class="d-none">Démarche</h2>
+                <article class="mb-15">
+                    <h2 class="text-uppercase">discovery & define</h2>
+                    <h3 class="fw-bold">Postulat</h3>
+                    <ul id="demarche-list-postulat">
+                        <li><span class="fw-bold">Pas de base existante </span>: Plateforme from scratch</li>
+                        <li>Phase Empathie / UX Research pas retenue</li>
+                        <li>Volume suffisant de <span class="fw-bold">documentation technique</span> et ébauches client
+                        </li>
+                        <li>Propositions UI Design</li>
+                    </ul>
+                </article>
+                <article class="mb-15">
+                    <h3 class=" fw-bold">Résultats</h3>
+                    <ul id="demarche-list-results">
+                        <li>Phase d'<span class="fw-bold">analyse</span> et <span class="fw-bold">traduction</span> de
+                            la documentation <span class="fw-bold">en schémas</span></li>
+                        <li>2 Ateliers de Co-Conception pour <span class="fw-bold">aligner la vision produit</span></li>
+                        <li>Conception d'un <span class="fw-bold">Service Blueprint</span> / Flowcharts</li>
+                        <li><span class="fw-bold">Liste des fonctionnalités</span>, rôles et automatisations</li>
+                        <li>Conception d'une architecture en <span class="fw-bold">arborescence</span></li>
+                    </ul>
+                </article>
+                <div class="demarche-img-container row align-items-center">
+                    <h3 class=" fw-bold margin-left">livrables</h3>
+                    <article class="col-md-6">
+                        <div class="card">
+                            <img src="images/Image_Medium_Delia_BluePrint_Default.png" alt="">
+                            <p class="card-title">Service Blueprint</p>
+                        </div>
+                    </article>
+                    <article class="col-md-6">
+                        <div class="card">
+                            <img src="images/Image_Small_Delia_Arborescence_Default.png" alt="">
+                            <p class="card-title">Arborescence</p>
+                        </div>
+                    </article>
+                </div>
+            </section>
+            <section id="ideate-section">
+                <article class="mb-50">
+                    <h2 class="text-uppercase">ideate & prototype</h2>
+                    <h3 class="fw-bold">Postulat</h3>
+                    <ul>
+                        <li>2 designers pour <span class="fw-bold">2 concepts de wireframes</span></li>
+                        <li>Contient :
+                            <ul class="inner-ul">
+                                <li>Connexion / <span class="fw-bold">Inscription</span></li>
+                                <li><span class="fw-bold">Dashboard</span> déposant</li>
+                                <li class="fw-bold">Dashboard Métier</li>
+                                <li><span class="fw-bold">Formulaires</span> de dépôt</li>
+                                <li>Fiches de Film/Série</li>
+                                <li class="fw-bold">Gestion du compte</li>
+                                <li><span class="fw-bold">FAQ </span>/ Aide en ligne</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </article>
+                <div class="ideate-img-container row align-items-center">
+                    <h3 class="fw-bold margin-left">Résultats</h3>
+                    <article class="col-md-6">
+                        <div class="card">
+                            <img src="images/Image_Medium_Delia_WF_FicheFilm.png" class="card-img-top" alt="">
+                            <p class="card-title">Wireframe Fiche de Film</p>
+                        </div>
+                    </article>
+                    <article class="col-md-6">
+                        <div class="card">
+                            <img src="images/Image_Medium_Delia_WF_Formulaire.png" class="card-img-top" alt="">
+                            <p class="card-title">Wireframe Formulaire de dépôt</p>
+                        </div>
+                    </article>
+                    <article class="col-md-6">
+                        <div class="card">
+                            <img src="images/Image_Small_Delia_WF_Deposant.png" class="card-img-top" alt="">
+                            <p class="card-title">Wireframe Dashboard déposant</p>
+                        </div>
+                    </article>
+                </div>
+            </section>
+            <section id="concept">
+                <h2 class="d-none">Concept</h2>
+                <article class="mb-50">
+                    <h2 class="text-uppercase">look & feel</h2>
+                    <h3 class="fw-bold">Postulat</h3>
+                    <ul id="concept-list-postulat">
+                        <li>Impossible de fusionner les 2 images de marque</li>
+                        <li>Vert interdit dans le cinéma</li>
+                        <li class="fw-bold">Accessibilité RGAA obligatoire</li>
+                        <li>Axes graphiques</li>
+                        <ul class="inner-ul">
+                            <li class="fw-bold">sobre</li>
+                            <li class="fw-bold">sérieux</li>
+                            <li class="fw-bold">intemporel</li>
+                        </ul>
+                    </ul>
+                </article>
+                <article>
+                    <h3 class="fw-bold">Résultats</h3>
+                    <ul id="concept-list-results">
+                        <li>Tons bleus foncés dégradés
+                        <li class="list-unstyled">+ lumineux & dynamique</li>
+                        </li>
+                        <li>1 seul camaïeu de bleu =
+                        <li class="list-unstyled fw-bold">Unité & sobriété</li>
+                        </li>
+                        <li>Blocs bleu clair + Textes bleu foncé =
+                        <li class="list-unstyled fw-bold">ratio accessibilité RGAA</li>
+                        </li>
+                        <li>Angles arrondis =
+                        <li class="list-unstyled">+ moderne</li>
+                        <li class="list-unstyled">- agressif</li>
+                        </li>
+                        <li>Call to Action (bouton) stylisé =
+                        <li class="list-unstyled fw-bold">signaler le changement</li>
+                        </li>
+                    </ul>
+                    <a href="" id="delia-proto-link" class="col-sm-10 col-md-12">Prototype Interactif <img
+                            src="images/go-to-icon.svg" alt=""></a>
+                </article>
+                <div class="concept-img-container row align-items-center">
+                    <h3 class="fw-bold">Livrables</h3>
+                    <article class="col-md-6">
+                        <div class="card">
+                            <img src="images/Image_Small_Delia_UI_Deposant.png" class="card-img-top" alt="">
+                            <p class="card-title">UI Design Dashboard déposant</p>
+                        </div>
+                    </article>
+                    <article class="col-md-6">
+                        <div class="card">
+                            <img src="images/Image_Small_Delia_UI_Formulaire.png" class="card-img-top" alt="">
+                            <p class="card-title">UI Design Formulaires</p>
+                        </div>
+                    </article>
+                    <article class="col-md-6">
+                        <div class="card">
+                            <img src="images/Image_Small_Delia_UI_FicheSerie.png" class="card-img-top" alt="">
+                            <p class="card-title">UI Design Fiche série</p>
+                        </div>
+                    </article>
+                    <article class="col-md-6">
+                        <div class="card">
+                            <img src="images/Image_Small_Delia_UI_Gestionaire.png" class="card-img-top" alt="">
+                            <p class="card-title">UI Design Dashboard Employé</p>
+                        </div>
+                    </article>
+                </div>
+            </section>
+            <section id="results">
+                <h2 class="text-uppercase d-none">Résultat</h2>
+                <article class="mb-50">
+                    <h3 class="fw-bold">rappel objectifs</h3>
+                    <ol>
+                        <li>Fusionner les dépôts</li>
+                        <li>Digitaliser les processus</li>
+                        <li>Accélérer les démarches</li>
+                        <li>Limiter les erreurs</li>
+                    </ol>
+                </article>
+                <article>
+                    <h3 class="fw-bold">résultats</h3>
+                    <ul>
+                        <li><span class="md-bold">Durée moyenne</span> démarche <span class="md-bold">accélérée</span> : de 6 semaines à 3 jours</li>
+                        <li>test du prototype : Impression de <span class="md-bold">clarté noté 4.6/5</span></li>
+                        <li><span class="md-block">Hausse de la productivité</span> moyenne employés : <br class="d-none d-md-block"><span class="md-bold">-1h15 par jour</span> de micro-gestion</li>
+                    </ul>
+                </article>
+                <a class="row-cols" id="question-btn" href="#">
+                    <span class="d-inline-block ctc-word">Des questions ? </span><i
+                        class="fa-brands fa-whatsapp d-inline-block fa-2x outline"></i>
+                </a>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <nav id="navbar-footer" class="navbar fixed-bottom">
+            <!-- Slider main container -->
+            <div class="swiper" data-swiper-parallax="500">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                        <a class="footer-links" href="#contexte">Contexte</a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a class="footer-links" href="#objectifs">Objectifs</a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a class="footer-links" href="#demarche">Démarche</a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a class="footer-links" href="#concept">Concept</a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a class="footer-links" href="#results">Résultats</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </footer>
+    <script src="script-swiper.js"></script>
+</body>
+
+</html>

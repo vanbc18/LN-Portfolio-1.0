@@ -4,7 +4,10 @@ const swiperMd = new Swiper('.swiper-md', {
   breakpoints: {
     768: {
       slidesPerView: 2.28
-    }
+    },
+    1024: {
+      slidesPerView: 2
+    },
   },
   loop: false,
 })
@@ -15,12 +18,15 @@ const swiper = new Swiper('.swiper', {
   breakpoints: {
     0: {
       slidesPerView: 2.5,
+      direction: "horizontal",
     },
     768: {
       slidesPerView: 5,
+      direction: "horizontal",
     },
     1024: {
-      slidesPerView: 5
+      slidesPerView: 5,
+      direction: "vertical",
     },
   },
   lazyPreloadPrevNext: 4,
@@ -43,45 +49,38 @@ const swiper = new Swiper('.swiper', {
   cssmode: true,
 });
 
-const footerLinks = document.querySelectorAll('.footer-links'); // Select ALL elements
-const sections = {
-  '#contexte': document.getElementById('contexte'),
-  '#objectifs': document.getElementById('objectifs'),
-  '#demarche': document.getElementById('demarche'),
-  '#results': document.getElementById('results')
+const sections = document.querySelectorAll('section');
+const footerLinks = document.querySelectorAll('.footer-links');
+
+// Function to update active state based on section visibility
+const updateActiveLinks = () => {
+  sections.forEach((section, index) => {
+    const rect = section.getBoundingClientRect();
+    const viewportTop = 100; // Adjust as needed
+
+    if (rect.top <= viewportTop && rect.bottom >= viewportTop) {
+      // Clear active state from all links
+      footerLinks.forEach(button => button.classList.remove('active'));
+      // Set active state on corresponding link
+      if (footerLinks[index]) {
+        footerLinks[index].classList.add('active');
+      }
+    }
+  });
 };
 
-window.addEventListener('scroll', () => {
-  const currentScrollPosition = window.pageYOffset || document.documentElement.scrollTop;
-
-  for (const sectionId in sections) {
-    const section = sections[sectionId];
-    if (!section) continue; // Handle cases where section might not be found
-
-    const sectionTop = section.offsetTop;
-    const sectionHeight = section.offsetHeight;
-    const sectionBottom = sectionTop + sectionHeight;
-
-    const correspondingLink = Array.from(footerLinks).find(link => link.id);
-
-    if (correspondingLink) {
-        if (currentScrollPosition >= sectionTop && currentScrollPosition < sectionBottom) {
-            // Activate corresponding link and deactivate others
-            footerLinks.forEach(link => link.classList.remove('active')); // Clear all first
-            correspondingLink.classList.add('active');
-        } 
-    }
-  }
-});
-
+// Click event listener
 footerLinks.forEach(link => {
   link.addEventListener('click', () => {
-    // 1. Remove 'btn-clicked' from *all* buttons
-    footerLinks.forEach(otherLink => {
-      otherLink.classList.remove('active');
-    });
-
-    // 2. Add 'btn-clicked' to the *clicked* button
+    // Clear active state from all links
+    footerLinks.forEach(otherLink => otherLink.classList.remove('active'));
+    // Set active state on clicked link
     link.classList.add('active');
   });
+});
+
+// Scroll event listener
+document.addEventListener('DOMContentLoaded', () => {
+  window.addEventListener('scroll', updateActiveLinks);
+  updateActiveLinks(); // Initial check
 });

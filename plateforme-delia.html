@@ -31,24 +31,26 @@
 <body>
     <header>
         <nav class="navbar fixed-top">
-            <div class="container" id="nav-container">
+            <div class="container-fluid col-md-12" id="nav-container">
                 <div id="nav-left-container" class="align-content-center">
-                    <div id="nav-title">
-                        <img src="images/btn-back.png" alt="">
+                    <div class="nav-item justify-content-center d-flex icon-container">
+                        <a class="nav-link" aria-current="page" href="index.html">
+                            <img class="img-fluid outline back-arrow" src="images/back-arrow.svg" alt="">
+                            <span class="d-none d-md-inline-block ctc-word">Retour</span>
+                        </a>
                     </div>
+
                 </div>
                 <ul class="row" id="nav-right-container">
-                    <li class="nav-item justify-content-center d-flex icon-container">
+                    <li class="nav-item justify-content-center d-flex icon-container mr-xs">
                         <a class="nav-link" aria-current="page" href="#">
                             <span class="d-none d-md-inline-block ctc-word">Contact </span>
                             <i class="fa-brands fa-whatsapp d-inline-block fa-2x outline"></i>
                         </a>
                     </li>
                     <li class="col nav-item justify-content-end d-flex">
-                        <a class="nav-link" href="#about">
-                            <div class="profile-pic-container">
-                                <img src="images/Profile Picture.jpg" alt="">
-                            </div>
+                        <a class="nav-link profile-pic-container" href="#about">
+                            <img src="images/Profile Picture.jpg" alt="">
                         </a>
                     </li>
                 </ul>
@@ -56,7 +58,7 @@
         </nav>
     </header>
     <main>
-        <section id="delia-hero-section">
+        <div id="delia-hero-section">
             <h1 class="hero-title text-uppercase">
                 <img src="images/delia-title.svg" alt="Plateforme Delia écrit avec des jeux d'ombres">
             </h1>
@@ -69,7 +71,7 @@
                 <img src="images/Logo-cnc.png" alt="" class="col-3">
                 <img src="images/Logo-ministere-culture.png" alt="" class="col-3">
             </div>
-        </section>
+        </div>
         <div data-bs-spy="scroll" data-bs-target="#navbar-footer" data-bs-root-margin="0px 0px -40%"
             data-bs-smooth-scroll="true" class="rounded-2" tabindex="0">
             <section id="contexte" data-content="CONTEXTE">
@@ -143,7 +145,7 @@
                     </div>
                 </div>
                 <article class="card d-md-none">
-                    <h3 class="card-title"><img src="images/crosshair.svg" alt="icône d'un viseur"> Cibles</h3>
+                    <h3 class="card-title m-0"><img src="images/crosshair.svg" alt="icône d'un viseur"> Cibles</h3>
                     <div class="card-body">
                         <p class="card-text">Utilisateurs B2B</p>
                         <ul id="cibles-list">
@@ -153,7 +155,7 @@
                     </div>
                 </article>
                 <article class="card d-md-none">
-                    <h3 class="card-title"><img src="images/users.svg" alt=""> Rôles</h3>
+                    <h3 class="card-title m-0"><img src="images/users.svg" alt=""> Rôles</h3>
                     <p>HR: Lead UX designer</p>
                     <p>HR: Lead UI designer</p>
                     <ul id="roles-list">
@@ -165,7 +167,7 @@
                     </ul>
                 </article>
                 <article class="card d-md-none">
-                    <h3 class="card-title"><img src="images/demarche.svg" alt="">Démarches</h3>
+                    <h3 class="card-title m-0"><img src="images/demarche.svg" alt="">Démarches</h3>
                     <ul id="demarches-list" class="p-0">
                         <li class="mt-0">Analyse de documents</li>
                         <li>2 Ateliers de Co-Conception</li>
@@ -175,7 +177,7 @@
                     </ul>
                 </article>
                 <article class="card d-md-none">
-                    <h3 class="card-title"><img src="images/archive.svg" alt="">Livrables</h3>
+                    <h3 class="card-title m-0"><img src="images/archive.svg" alt="">Livrables</h3>
                     <ul id="livrables-list" class="p-0">
                         <li class="mt-0">Service Blueprint</li>
                         <li>Arborescence</li>
@@ -187,7 +189,7 @@
                 </article>
             </section>
             <section id="objectifs" data-content="OBJECTIFS">
-                <article>
+                <article class="marginX-lg">
                     <h2>Accélérer et faciliter le dépôt légal</h2>
                     <ol>
                         <li>Fusionner les dépôts</li>
@@ -198,49 +200,52 @@
                 </article>
             </section>
             <section id="demarche">
-                <h2 class="d-none">Démarche</h2>
-                <article class="mb-15">
-                    <h2 class="text-uppercase">discovery & define</h2>
-                    <h3 class="fw-bold">Postulat</h3>
-                    <ul id="demarche-list-postulat">
-                        <li><span class="fw-bold">Pas de base existante </span>: Plateforme from scratch</li>
-                        <li>Phase Empathie / UX Research pas retenue</li>
-                        <li>Volume suffisant de <span class="fw-bold">documentation technique</span> et ébauches client
-                        </li>
-                        <li>Propositions UI Design</li>
-                    </ul>
-                </article>
-                <article class="mb-15">
-                    <h3 class=" fw-bold">Résultats</h3>
-                    <ul id="demarche-list-results">
-                        <li>Phase d'<span class="fw-bold">analyse</span> et <span class="fw-bold">traduction</span> de
-                            la documentation <span class="fw-bold">en schémas</span></li>
-                        <li>2 Ateliers de Co-Conception pour <span class="fw-bold">aligner la vision produit</span></li>
-                        <li>Conception d'un <span class="fw-bold">Service Blueprint</span> / Flowcharts</li>
-                        <li><span class="fw-bold">Liste des fonctionnalités</span>, rôles et automatisations</li>
-                        <li>Conception d'une architecture en <span class="fw-bold">arborescence</span></li>
-                    </ul>
-                </article>
-                <div class="demarche-img-container row align-items-center">
-                    <h3 class=" fw-bold margin-left">livrables</h3>
-                    <article class="col-md-6">
+                <div class="col-md-12 col-lg">
+                    <article class="mb-50">
+                        <h2 class="text-uppercase">discovery & define</h2>
+                        <h3>Postulat</h3>
+                        <ul id="demarche-list-postulat">
+                            <li><span class="fw-bold">Pas de base existante </span>: Plateforme from scratch</li>
+                            <li>Phase Empathie / UX Research pas retenue</li>
+                            <li>Volume suffisant de <span class="fw-bold">documentation technique</span> et ébauches
+                                client
+                            </li>
+                            <li>Propositions UI Design</li>
+                        </ul>
+                    </article>
+                    <article class="mb-15">
+                        <h3>Résultats</h3>
+                        <ul id="demarche-list-results">
+                            <li>Phase d'<span class="fw-bold">analyse</span> et <span class="fw-bold">traduction</span>
+                                de
+                                la documentation <span class="fw-bold">en schémas</span></li>
+                            <li>2 Ateliers de Co-Conception pour <span class="fw-bold">aligner la vision produit</span>
+                            </li>
+                            <li>Conception d'un <span class="fw-bold">Service Blueprint</span> / Flowcharts</li>
+                            <li><span class="fw-bold">Liste des fonctionnalités</span>, rôles et automatisations</li>
+                            <li>Conception d'une architecture en <span class="fw-bold">arborescence</span></li>
+                        </ul>
+                    </article>
+                </div>
+                <div class="demarche-img-container row align-items-center d-flex d-lg-inline-block col-lg">
+                    <h3 class="margin-left">livrables</h3>
+                    <article class="col-md-6 col-lg-12">
                         <div class="card">
                             <img src="images/Image_Medium_Delia_BluePrint_Default.png" alt="">
                             <p class="card-title">Service Blueprint</p>
                         </div>
                     </article>
-                    <article class="col-md-6">
+                    <article class="col-md-6 col-lg-12">
                         <div class="card">
                             <img src="images/Image_Small_Delia_Arborescence_Default.png" alt="">
                             <p class="card-title">Arborescence</p>
                         </div>
                     </article>
                 </div>
-            </section>
-            <section id="ideate-section">
-                <article class="mb-50">
+            <div id="ideate-section">
+                <article class="mb-50 col-lg">
                     <h2 class="text-uppercase">ideate & prototype</h2>
-                    <h3 class="fw-bold">Postulat</h3>
+                    <h3>Postulat</h3>
                     <ul>
                         <li>2 designers pour <span class="fw-bold">2 concepts de wireframes</span></li>
                         <li>Contient :
@@ -256,100 +261,108 @@
                         </li>
                     </ul>
                 </article>
-                <div class="ideate-img-container row align-items-center">
-                    <h3 class="fw-bold margin-left">Résultats</h3>
-                    <article class="col-md-6">
+                <div class="ideate-img-container row align-items-center col-lg">
+                    <h3 class="margin-left">Résultats</h3>
+                    <article class="col-md-6 col-lg-12">
                         <div class="card">
-                            <img src="images/Image_Medium_Delia_WF_FicheFilm.png" class="card-img-top" alt="">
+                            <img src="images/Image_Medium_Delia_WF_FicheFilm.png" alt="">
                             <p class="card-title">Wireframe Fiche de Film</p>
                         </div>
                     </article>
-                    <article class="col-md-6">
+                    <article class="col-md-6 col-lg-12">
                         <div class="card">
-                            <img src="images/Image_Medium_Delia_WF_Formulaire.png" class="card-img-top" alt="">
+                            <img src="images/Image_Medium_Delia_WF_Formulaire.png" alt="">
                             <p class="card-title">Wireframe Formulaire de dépôt</p>
                         </div>
                     </article>
-                    <article class="col-md-6">
+                    <article class="col-md-6 col-lg-12">
                         <div class="card">
-                            <img src="images/Image_Small_Delia_WF_Deposant.png" class="card-img-top" alt="">
+                            <img src="images/Image_Small_Delia_WF_Deposant.png" alt="">
                             <p class="card-title">Wireframe Dashboard déposant</p>
                         </div>
                     </article>
                 </div>
             </section>
             <section id="concept">
-                <h2 class="d-none">Concept</h2>
-                <article class="mb-50">
-                    <h2 class="text-uppercase">look & feel</h2>
-                    <h3 class="fw-bold">Postulat</h3>
-                    <ul id="concept-list-postulat">
-                        <li>Impossible de fusionner les 2 images de marque</li>
-                        <li>Vert interdit dans le cinéma</li>
-                        <li class="fw-bold">Accessibilité RGAA obligatoire</li>
-                        <li>Axes graphiques</li>
-                        <ul class="inner-ul">
-                            <li class="fw-bold">sobre</li>
-                            <li class="fw-bold">sérieux</li>
-                            <li class="fw-bold">intemporel</li>
+                <div class="col-md-12 col-lg">
+                    <article class="mb-50">
+                        <h2 class="text-uppercase">look & feel</h2>
+                        <h3>Postulat</h3>
+                        <ul id="concept-list-postulat">
+                            <li>Impossible de fusionner les 2 images de marque</li>
+                            <li>Vert interdit dans le cinéma</li>
+                            <li class="fw-bold">Accessibilité RGAA obligatoire</li>
+                            <li>Axes graphiques</li>
+                            <ul class="inner-ul">
+                                <li class="fw-bold">sobre</li>
+                                <li class="fw-bold">sérieux</li>
+                                <li class="fw-bold">intemporel</li>
+                            </ul>
                         </ul>
-                    </ul>
-                </article>
-                <article>
-                    <h3 class="fw-bold">Résultats</h3>
-                    <ul id="concept-list-results">
-                        <li>Tons bleus foncés dégradés
-                        <li class="list-unstyled">+ lumineux & dynamique</li>
-                        </li>
-                        <li>1 seul camaïeu de bleu =
-                        <li class="list-unstyled fw-bold">Unité & sobriété</li>
-                        </li>
-                        <li>Blocs bleu clair + Textes bleu foncé =
-                        <li class="list-unstyled fw-bold">ratio accessibilité RGAA</li>
-                        </li>
-                        <li>Angles arrondis =
-                        <li class="list-unstyled">+ moderne</li>
-                        <li class="list-unstyled">- agressif</li>
-                        </li>
-                        <li>Call to Action (bouton) stylisé =
-                        <li class="list-unstyled fw-bold">signaler le changement</li>
-                        </li>
-                    </ul>
-                    <a href="" id="delia-proto-link" class="col-sm-10 col-md-12">Prototype Interactif <img
-                            src="images/go-to-icon.svg" alt=""></a>
-                </article>
-                <div class="concept-img-container row align-items-center">
-                    <h3 class="fw-bold">Livrables</h3>
-                    <article class="col-md-6">
-                        <div class="card">
-                            <img src="images/Image_Small_Delia_UI_Deposant.png" class="card-img-top" alt="">
-                            <p class="card-title">UI Design Dashboard déposant</p>
-                        </div>
                     </article>
-                    <article class="col-md-6">
-                        <div class="card">
-                            <img src="images/Image_Small_Delia_UI_Formulaire.png" class="card-img-top" alt="">
-                            <p class="card-title">UI Design Formulaires</p>
-                        </div>
-                    </article>
-                    <article class="col-md-6">
-                        <div class="card">
-                            <img src="images/Image_Small_Delia_UI_FicheSerie.png" class="card-img-top" alt="">
-                            <p class="card-title">UI Design Fiche série</p>
-                        </div>
-                    </article>
-                    <article class="col-md-6">
-                        <div class="card">
-                            <img src="images/Image_Small_Delia_UI_Gestionaire.png" class="card-img-top" alt="">
-                            <p class="card-title">UI Design Dashboard Employé</p>
-                        </div>
+                    <article>
+                        <h3>Résultats</h3>
+                        <ul id="concept-list-results">
+                            <li>Tons bleus foncés dégradés : <br class="d-block d-lg-none">
+                                <span>+ lumineux & dynamique
+                            </li>
+                            </li>
+                            <li>1 seul camaïeu de bleu = <br class="d-block d-lg-none">
+                                <span class="fw-bold">Unité & sobriété
+                            </li>
+                            </li>
+                            <li>Blocs bleu clair + Textes bleu foncé = <br class="d-block d-lg-none">
+                                <span class="fw-bold">ratio accessibilité RGAA
+                            </li>
+                            </li>
+                            <li>Angles arrondis = <br class="d-block d-lg-none">
+                                <span>+ moderne
+                            </li>
+                            <li class="list-unstyled">- agressif</li>
+                            </li>
+                            <li>Call to Action (bouton) stylisé = <br class="d-block d-lg-none">
+                                <span class="fw-bold">signaler le changement
+                            </li>
+                            </li>
+                        </ul>
+                        <a href="" id="delia-proto-link" class="col-sm-10 col-md-12">
+                            <span class="mr-xs">Prototype Interactif </span>
+                            <img src="images/go-to-icon.svg" alt="">
+                        </a>
                     </article>
                 </div>
+                    <div class="concept-img-container row align-items-center d-flex d-lg-inline-block col-lg">
+                        <h3>Livrables</h3>
+                        <article class="col-md-6 col-lg-12">
+                            <div class="card">
+                                <img src="images/Image_Small_Delia_UI_Deposant.png" alt="">
+                                <p class="card-title text-nowrap">UI Design Dashboard déposant</p>
+                            </div>
+                        </article>
+                        <article class="col-md-6 col-lg-12">
+                            <div class="card">
+                                <img src="images/Image_Small_Delia_UI_Formulaire.png" alt="">
+                                <p class="card-title">UI Design Formulaires</p>
+                            </div>
+                        </article>
+                        <article class="col-md-6 col-lg-12">
+                            <div class="card">
+                                <img src="images/Image_Small_Delia_UI_FicheSerie.png" alt="">
+                                <p class="card-title">UI Design Fiche série</p>
+                            </div>
+                        </article>
+                        <article class="col-md-6 col-lg-12">
+                            <div class="card">
+                                <img src="images/Image_Small_Delia_UI_Gestionaire.png" alt="">
+                                <p class="card-title">UI Design Dashboard Employé</p>
+                            </div>
+                        </article>
+                    </div>
             </section>
             <section id="results">
                 <h2 class="text-uppercase d-none">Résultat</h2>
                 <article class="mb-50">
-                    <h3 class="fw-bold">rappel objectifs</h3>
+                    <h3>rappel objectifs</h3>
                     <ol>
                         <li>Fusionner les dépôts</li>
                         <li>Digitaliser les processus</li>
@@ -358,24 +371,30 @@
                     </ol>
                 </article>
                 <article>
-                    <h3 class="fw-bold">résultats</h3>
+                    <h3>résultats</h3>
                     <ul>
-                        <li><span class="md-bold">Durée moyenne</span> démarche <span class="md-bold">accélérée</span> : de 6 semaines à 3 jours</li>
+                        <li><span class="md-bold">Durée moyenne</span> démarche <span class="md-bold">accélérée</span> :
+                            de 6 semaines à 3 jours</li>
                         <li>test du prototype : Impression de <span class="md-bold">clarté noté 4.6/5</span></li>
-                        <li><span class="md-block">Hausse de la productivité</span> moyenne employés : <br class="d-none d-md-block"><span class="md-bold">-1h15 par jour</span> de micro-gestion</li>
+                        <li><span class="md-block">Hausse de la productivité</span> moyenne employés : <br
+                                class="d-none d-md-block d-lg-none"><span class="md-bold">-1h15 par jour</span> de
+                            micro-gestion
+                        </li>
                     </ul>
                 </article>
-                <a class="row-cols" id="question-btn" href="#">
-                    <span class="d-inline-block ctc-word">Des questions ? </span><i
-                        class="fa-brands fa-whatsapp d-inline-block fa-2x outline"></i>
-                </a>
+                <div class="container-fluid col-lg-5">
+                    <a id="question-btn" aria-current="page" href="#">
+                        <span class="mr-xs">Des questions ? </span>
+                        <i class="fa-brands fa-whatsapp fa-2x outline"></i>
+                    </a>
+                </div>
             </section>
         </div>
     </main>
     <footer>
-        <nav id="navbar-footer" class="navbar fixed-bottom">
+        <nav id="navbar-footer" class="navbar fixed-bottom mb-2">
             <!-- Slider main container -->
-            <div class="swiper" data-swiper-parallax="500">
+            <div class="swiper">
                 <!-- Additional required wrapper -->
                 <div class="swiper-wrapper">
                     <!-- Slides -->

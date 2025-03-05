@@ -423,16 +423,20 @@ footer {
 #footer-left-container {
   display: flex;
   flex-direction: column;
-  justify-content: start;
+  justify-content: start !important;
   margin: 27.5px 0;
 }
 
 #footer-name {
   font-size: var(--txt-16) !important;
+  justify-self: start !important;
+  width: 100%;
 }
 
 #footer-copyright, .footer-links {
   font-size: var(--txt-12) !important;
+  justify-self: start !important;
+  width: 100%;
 }
 
 #footer-ul {

@@ -123,6 +123,7 @@ nav {
   border-radius: 100%;
   background-color: var(--white);
   padding: 0 !important;
+  font-weight: 600;
 }
 
 .profile-pic-container img {

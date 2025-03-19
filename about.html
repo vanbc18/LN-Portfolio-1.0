@@ -26,75 +26,84 @@
 </head>
 
 <body>
-
-    <body>
-        <!-- header -->
-        <header>
-            <nav class="navbar">
-                <div class="container" id="nav-container">
-                    <div id="nav-left-container" class="align-content-center">
-                        <div id="nav-title">
-                            <span id="header-title" class="mb-0">Hélène Ramette</span>
-                            <span id="nav-subtitle" class="d-block">/ Portfolio</span>
-                        </div>
+    <!-- header -->
+    <header>
+        <nav class="navbar fixed-top">
+            <div class="container-fluid col-md-12" id="nav-container">
+                <div id="nav-left-container" class="align-content-center">
+                    <div class="nav-item justify-content-center d-flex icon-container">
+                        <a class="nav-link" aria-current="page" href="index.html">
+                            <img class="img-fluid outline back-arrow" src="images/back-arrow.svg" alt="">
+                            <span class="d-none d-md-inline-block ctc-word">Retour</span>
+                        </a>
                     </div>
-                    <ul class="row" id="nav-right-container">
-                        <li class="nav-item justify-content-center d-flex icon-container mr-xs">
-                            <a class="nav-link active" aria-current="page" href="#">
-                                <span class="d-none d-md-inline-block ctc-word">Contact </span>
-                                <i class="fa-brands fa-whatsapp d-inline-block fa-2x outline"></i>
-                            </a>
-                        </li>
-                        <li class="col nav-item justify-content-end d-flex">
-                            <a class="nav-link" href="about.html">
-                                <div class="profile-pic-container">
-                                    <img src="images/Profile Picture.jpg" alt="">
-                                </div>
-                            </a>
-                        </li>
-                    </ul>
+
                 </div>
-            </nav>
-        </header>
-        <main>
-            <section id="hero-section-about">
-                <h1 class="text-uppercase" id="hero-title-about">
-                    À propos
-                </h1>
-                <article>
-                    <p class="intro-text">
-                        <span class="hero-title">Hélène Ramette,</span> 32 ans
-                        <br>
-                        Freelance
-                        <br>
-                        <span class="hero-title text-uppercase">UX / UI Designer</span>
-                        <span class="and-sign">&</span> <span class="hero-title d-block">Product Designer</span>
-                        8 ans d'expérience
-                    </p>
-                </article>
-            </section>
-            <section id="metier">
-            <h2 class="text-uppercase">Mon métier</h2>
+                <ul class="row" id="nav-right-container">
+                    <li class="nav-item justify-content-center d-flex icon-container mr-xs">
+                        <a class="nav-link" aria-current="page" href="#">
+                            <span class="d-none d-md-inline-block ctc-word">Contact </span>
+                            <i class="fa-brands fa-whatsapp d-inline-block fa-2x outline"></i>
+                        </a>
+                    </li>
+                    <li class="col nav-item justify-content-end d-flex">
+                        <a class="nav-link profile-pic-container" href="index.html">
+                            <p class="d-none d-lg-block mb-0 px-2 text-nowrap">À propos</p>
+                            <img src="images/Profile Picture.jpg" alt="">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section id="hero-section-about">
+            <h1 class="text-uppercase" id="hero-title-about">
+                À propos
+            </h1>
             <article>
-                Après avoir travaillé 6 ans en agences digitales, et 2 ans en start-up, je deviens indépendante en
-                Octobre 2024.
-
-                Aujourd'hui j'accompagne tous type d'entreprise dans leur démarche centrée sur l’utilisateur.
-
-                En tant que généraliste, j'interviens dans tous les secteurs, pour du B2B et B2C, seule ou en équipe, à
-                chaque étape du design :
-                <ul>
-                <li>Empathy et recherche utilisateur</li>
-                <li>Define et conception de schémas ou livrables UX</li>
-                <li>Ideate et la production de wireframes ou maquettes basse définition</li>
-                <li>Prototype avec maquettes ou no-code / low-code</li>
-                <li>Test et ses nombreuses techniques</li>
-            </ul>
+                <p class="intro-text">
+                    <span class="hero-title1">Hélène Ramette,</span> <span class="age"> 32 ans</span>
+                    <br>
+                    <span class="normal-hero-title1">Freelance</span>
+                    <br>
+                    <span class="hero-title2 text-uppercase">UX/UI <br> Designer</span>
+                <p class="d-flex align-items-center justify-content-end hero-text-container m-0"><span
+                        class="and-sign">&</span> <span class="hero-title3">Product <br> Designer</span></p>
+                <span class="normal-hero-title2">8 ans d'expérience</span>
+                </p>
             </article>
-            
+        </section>
+        <section id="metier">
+            <article>
+                <h2 class="text-uppercase">Mon métier</h2>
+                <p>
+                    Après avoir travaillé <span class="fw-bold"> 6 ans en agences digitales,</span> et <span
+                        class="fw-bold"> 2 ans en start-up</span>, je deviens indépendante en
+                    Octobre 2024.
+                </p>
+                <p>
+                    Aujourd'hui j'accompagne <span class="fw-bold">tous type d'entreprise</span> dans leur <span
+                        class="fw-bold">démarche centrée sur l'utilisateur.</span>
+                </p>
+                <p>
+                    En tant que <span class="fw-bold">généraliste</span>, j'interviens
+                    dans <span class="fw-bold">tous les secteurs</span>, pour du <span class="fw-bold">B2B</span> et
+                    <span class="fw-bold">B2C, seule</span> ou en
+                    <span class="fw-bold">équipe</span>, à chaque étape du design :
+                <ul>
+                    <li>Empathy et <span class="fw-bold">recherche utilisateur</span></li>
+                    <li>Define et conception de schémas ou <span class="fw-bold">livrables UX</span></li>
+                    <li>Ideate et la production de <span class="fw-bold">wireframes</span> ou maquettes basse définition
+                    </li>
+                    <li><span class="fw-bold">Prototype</span> avec maquettes ou no-code / low-code</li>
+                    <li><span class="fw-bold">Test</span> et ses nombreuses techniques</li>
+                </ul>
+                </p>
+            </article>
             <article>
                 <h2>Ils m'ont fait confiance</h2>
-                <div class="logo-container">
+                <div class="logo-container col-12 d-sm-block d-md-none">
                     <div class="row">
                         <div class="col-4">
                             <img src="images/air-liquide-logo-1.png" alt="">
@@ -140,104 +149,191 @@
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-sm-4">
-                            <img src="" alt="">
+                        <div class="col-4">
+                            <img src="images/loreal-logo-13.png" alt="">
                         </div>
-                        <div class="col-sm-4">
-                            <img src="" alt="">
+                        <div class="col-4">
+                            <img src="images/orange-logo-14.png" alt="">
                         </div>
-                        <div class="col-sm-4">
-                            <img src="" alt="">
+                        <div class="col-4">
+                            <img src="images/skema-logo-15.png" alt="">
                         </div>
                     </div>
-                    <div class="col-sm-4">
-                        <img src="" alt="">
+                    <div class="row">
+                        <div class="col-4">
+                            <img src="images/safran-logo-16.png" alt="">
+                        </div>
+                        <div class="col-4">
+                            <img src="images/siagi-logo-17.png" alt="">
+                        </div>
+                        <div class="col-4">
+                            <img src="images/thales-logo-18.png" alt="">
+                        </div>
                     </div>
-                    <div class="col-sm-4">
-                        <img src="" alt="">
+                    <div class="row">
+                        <div class="col-4">
+                            <img src="images/veolia-logo-19.png" alt="">
+                        </div>
+                        <div class="col-4">
+                            <img src="images/Logo-ministere-culture.png" alt="">
+                        </div>
                     </div>
-                    <div class="col-sm-4">
-                        <img src="" alt="">
+                </div>
+                <div class="logo-container d-none d-md-flex justify-content-center col-lg-12">
+                    <div class="row">
+                        <div class="col-3">
+                            <img src="images/air-liquide-logo-1.png" alt="">
+                        </div>
+                        <div class="col-3">
+                            <img src="images/airbus-logo-2.png" alt="">
+                        </div>
+                        <div class="col-3">
+                            <img src="images/bnp-logo-3.png" alt="">
+                        </div>
+                        <div class="col-3">
+                            <img src="images/bic-logo-4.png" alt="">
+                        </div>
                     </div>
-                    <div class="col-sm-4">
-                        <img src="" alt="">
+                    <div class="row">
+                        <div class="col-3">
+                            <img src="images/logo-bnf.png" alt="">
+                        </div>
+                        <div class="col-3">
+                            <img src="images/Logo-cnc.png" alt="">
+                        </div>
+                        <div class="col-3">
+                            <img src="images/dialonce-logo-7.png" alt="">
+                        </div>
+                        <div class="col-3">
+                            <img src="images/ey-logo-8.png" alt="">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-3">
+                            <img src="images/edenred-logo-9.png" alt="">
+                        </div>
+                        <div class="col-3">
+                            <img src="images/engie-logo-10.png" alt="">
+                        </div>
+                        <div class="col-3">
+                            <img src="images/fnac-logo-11.png" alt="">
+                        </div>
+                        <div class="col-4">
+                            <img src="images/hermes-logo-12.png" alt="">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-3">
+                            <img src="images/loreal-logo-13.png" alt="">
+                        </div>
+                        <div class="col-3">
+                            <img src="images/orange-logo-14.png" alt="">
+                        </div>
+                        <div class="col-3">
+                            <img src="images/skema-logo-15.png" alt="">
+                        </div>
+                        <div class="col-3">
+                            <img src="images/safran-logo-16.png" alt="">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-3">
+                            <img src="images/siagi-logo-17.png" alt="">
+                        </div>
+                        <div class="col-3">
+                            <img src="images/thales-logo-18.png" alt="">
+                        </div>
+                        <div class="col-3">
+                            <img src="images/veolia-logo-19.png" alt="">
+                        </div>
+                        <div class="col-3">
+                            <img src="images/Logo-ministere-culture.png" alt="">
+                        </div>
                     </div>
                 </div>
             </article>
             <article>
-                <a href="">Vous aussi, contactez-moi <img src="images/phone.png" alt=""></a>
+                <a class="ctc-btn col-10 col-md-7 col-lg-5 justify-self-center" href="">Vous aussi, contactez-moi <img
+                        src="images/phone.png" alt=""></a>
             </article>
         </section>
         <section id="services">
             <article>
-            <h2 class="text-uppercase">mode de travail</h2>
-            <p>
-                Tarification mission souple :
+                <h2 class="text-uppercase">mode de travail</h2>
+                <p>
+                    Tarification <span class="fw-bold">mission</span> souple :
                 <ul>
-                    <li>Facturation à l'heure, à la demi-journée, ou à la journée</li>
-                    <li>TJM : 500€ HT</li>
+                    <li>Facturation à l'heure, à la demi-<br class="d-sm-block d-md-none">journée, ou à la journée</li>
+                    <li class="fw-bold">TJM : 500€ HT</li>
                 </ul>
-                Tarifs au forfait :
+                Tarifs au <span class="fw-bold">forfait</span> :
                 <ul>
                     <li>Sur devis uniquement</li>
                 </ul>
-            </p>
-        </article>
-        <article>
-            <h2 class="text-uppercase">Services</h2>
-      <div id="services-card-container">
-        <div class="card" id="workshop-card">
-          <div class="card-body">
-            <h4 class="card-title">
-              <img src="images/package.svg" alt="icône d'un colis">
-              Ateliers & Workshop
-            </h4>
-            <ul class="p-0">
-              <li class="card-list-item">Interventions en entreprise</li>
-              <li class="card-list-item">Interventions en écoles</li>
-              <li class="card-list-item">Ateliers en ligne</li>
-            </ul>
-          </div>
-        </div>
-        <div class="card" id="design-card">
-          <div class="card-body">
-            <h4 class="card-title">
-              <img src="images/tool.svg" alt="icône d'une clé anglaise">
-              UX / UI Design
-            </h4>
-            <ul class="p-0">
-              <li class="card-list-item">Conception ou refonte de sites web</li>
-              <li class="card-list-item">Conception ou refonte d'applications mobiles</li>
-              <li class="card-list-item">Conception de logiciels/outils digitaux</li>
-              <li class="card-list-item">Conception d'interfaces pour des produits physiques</li>
-            </ul>
-          </div>
-        </div>
-        <div class="card" id="design-card">
-          <div class="card-body">
-            <h4 class="card-title">
-              <img src="images/pen.svg" alt="icône d'un stylo plume">
-              Coup de pouce
-            </h4>
-            <ul class="p-0">
-              <li class="card-list-item">Mentoring et / ou Consulting UX/UI Design</li>
-              <li class="card-list-item">Réalisation de livrables au forfait</li>
-              <li class="card-list-item">Remplacements d’urgence</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      <a href="#" class="question-btn">Une question ?
-        <img src="images/whatsapp-logo.png" alt="" class="img-fluid">
-      </a>
-        </article>
-        </section>
-        <section id="cv">
-            <h2 class="white-txt text-uppercase">Curriculum vitae</h2>
+                </p>
+            </article>
             <article>
-                <p><span class="fw-bold">24 - Auj</span> 6 mois</p>
+                <h2 class="text-uppercase">Services</h2>
+                <div id="services-card-container">
+                    <div class="card" id="workshop-card">
+                        <div class="card-body">
+                            <h4 class="card-title">
+                                <img src="images/briefcase.svg" alt="icône d'un colis">
+                                Ateliers & Workshop
+                            </h4>
+                            <ul class="mb-0 p-0">
+                                <li class="card-list-item">Interventions en entreprise</li>
+                                <li class="card-list-item">Interventions en écoles</li>
+                                <li class="card-list-item mb-0">Ateliers en ligne</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="card" id="design-card">
+                        <div class="card-body">
+                            <h4 class="card-title">
+                                <img src="images/layout.svg" alt="icône d'une clé anglaise">
+                                UX / UI Design
+                            </h4>
+                            <ul class="mb-0 p-0">
+                                <li class="card-list-item">Conception ou refonte de sites web</li>
+                                <li class="card-list-item">Conception ou refonte d'applications mobiles</li>
+                                <li class="card-list-item">Conception de logiciels/outils digitaux</li>
+                                <li class="card-list-item mb-0">Conception d'interfaces pour des produits physiques</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="card" id="help-card">
+                        <div class="card-body">
+                            <h4 class="card-title">
+                                <img src="images/thumbs-up.svg" alt="icône d'un stylo plume">
+                                Coup de pouce
+                            </h4>
+                            <ul class="mb-0 p-0">
+                                <li class="card-list-item">Mentoring et / ou Consulting UX/UI Design</li>
+                                <li class="card-list-item">Réalisation de livrables au forfait</li>
+                                <li class="card-list-item mb-0">Remplacements d'urgence</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <article>
+                <a href="#" class="ctc-btn">Une question ?
+                    <div class="img-container">
+                        <img src="images/txt-bubble.png" alt="WhatsApp logo" class="img-fluid">
+                    </div>
+                </a>
+            </article>
+        </section>
+        <div id="group-section-lg">
+        <section id="cv">
+            <h2 class="text-uppercase">Curriculum vitae</h2>
+            <article>
+                <p>
+                    <span class="fw-bold">24 - Auj</span> <span class="extra-light">6 mois</span>
+                </p>
                 <h3 class="text-uppercase">product designer freelance</h3>
-                <p>Entreprise Individuelle, International</p>
+                <p class="extra-light">Entreprise Individuelle, International</p>
                 <ul>
                     <li>Missions freelance pour agences</li>
                     <li>Démarches UX-UI pour les entreprises</li>
@@ -247,24 +343,25 @@
                 </ul>
             </article>
             <article>
-                <p><span class="fw-bold">2022 - 23</span> 1.5 ans</p>
+                <p><span class="fw-bold">2022 - 23</span> <span class="extra-light">1.5 ans</span></p>
                 <h3 class="text-uppercase">FOUNDER DESIGNER</h3>
-                <p>DialOnce, Paris</p>
+                <p class="extra-light">DialOnce, Paris</p>
                 <ul>
                     <li>Amélioration continue des logiciels par Sprints</li>
                     <li>Planification et exécution de tests d'utilisabilité</li>
                     <li>UX Research & Analyse</li>
                     <li>Sensibilisation et évangélisation UX-UI</li>
-                    <li>Réalisation des livrables stratégiques centrées sur l'utilisateur (User Journey, Service Blueprint, Flowcharts, Personas…)</li>
+                    <li>Réalisation des livrables stratégiques centrées sur l'utilisateur (User Journey, Service
+                        Blueprint, Flowcharts, Personas…)</li>
                     <li>Planification & Facilitation d'un Design Sprint</li>
                     <li>Prototypes, wireframes et maquettes</li>
                     <li>Amélioration ergonomique & archi de l'info</li>
                 </ul>
             </article>
             <article>
-                <p><span class="fw-bold">2021 - 22</span> 1 an</p>
+                <p><span class="fw-bold">2021 - 22</span> <span class="extra-light">1 an</span></p>
                 <h3 class="text-uppercase">lead product DESIGNER</h3>
-                <p>WeDigitalGarden, Paris</p>
+                <p class="extra-light">WeDigitalGarden, Paris</p>
                 <ul>
                     <li>Management de l'équipe design (5 p)</li>
                     <li>Gestion de la production (déroulé, suivi, qualité, assistance) auprès des designers</li>
@@ -275,24 +372,27 @@
                 </ul>
             </article>
             <article>
-                <p><span class="fw-bold">2019 - 21</span> 2 ans</p>
+                <p><span class="fw-bold">2019 - 21</span> <span class="extra-light">2 ans</span></p>
                 <h3 class="text-uppercase">consultante ux/ui</h3>
-                <p>Ai3 + Talan, Boulogne-Billancourt</p>
+                <p class="extra-light">Ai3 + Talan, Boulogne-Billancourt</p>
                 <ul>
                     <li>Démarches centrées utilisateur </li>
-                    <li>Lead de projet UX-UI (empathie, définition, idéation, prototype, conception)Facilitation d'ateliers UX et Design Thinking Multi-projets grand comptes (BnF, Hermès, L'Oréal, EY....)</li>
-                    <li>Livrables (audits ergonomiques, empathie map, parcours, flowcharts, persona, user story map, wireframes, prototypes animés, maquettes)</li>
+                    <li>Lead de projet UX-UI (empathie, définition, idéation, prototype, conception)Facilitation
+                        d'ateliers UX et Design Thinking Multi-projets grand comptes (BnF, Hermès, L'Oréal,
+                        EY....)</li>
+                    <li>Livrables (audits ergonomiques, empathie map, parcours, flowcharts, persona, user story map,
+                        wireframes, prototypes animés, maquettes)</li>
                 </ul>
             </article>
             <article>
-                <p><span class="fw-bold">2017 - 19</span> 2 ans</p>
+                <p><span class="fw-bold">2017 - 19</span> <span class="extra-light">2 ans</span></p>
                 <h3 class="text-uppercase">ux/ui & graphic designer</h3>
-                <p>Agences Digitales by Open, Levallois-Perret</p>
+                <p class="extra-light">Agences Digitales by Open, Levallois-Perret</p>
             </article>
             <article>
-                <p><span class="fw-bold">2013 - 15</span> 2 ans</p>
+                <p><span class="fw-bold">2013 - 15</span> <span class="extra-light">2 ans</span></p>
                 <h3 class="text-uppercase">graphic designer</h3>
-                <p>Freelance (temps partiel), Paris</p>
+                <p class="mb-0 extra-light">Freelance (temps partiel), Paris</p>
             </article>
         </section>
         <section id="formation">
@@ -314,250 +414,297 @@
             </article>
         </section>
         <section id="skills">
-            <article>
-                <h3 class="text-uppercase">facilitation d'ateliers</h3>
-                <div class="row stars-container">
-                    <img src="images/star-fill.png" alt="a star filled with the color purple" class="col-1">
-                    <img src="images/star-fill.png" alt="a star filled with the color purple" class="col-1">
-                    <img src="images/star-fill.png" alt="a star filled with the color purple" class="col-1">
-                    <img src="images/star-fill.png" alt="a star filled with the color purple" class="col-1">
-                    <img src="images/star-half.png" alt="a star half filled with the color purple" class="col-1">
-                </div>
-                <ul>
-                    <li>Design Sprint (Time-to-Market)</li>
-                    <li>Hackathon, Crazy 8</li>
-                    <li>Co-création pluri-disciplinaire</li>
-                    <li>Design Thinking (Discovery, Empathy, Priorisation, Idéation, Prototyping, Critique)</li>
-                    <li>Serious Games (Lego Serious Play)</li>
-                </ul>
-            </article>
-            <article>
-                <h3 class="text-uppercase">ux research</h3>
-                <div class="row stars-container">
-                    <img src="images/star-fill.png" alt="a star filled with the color purple" class="col-1">
-                    <img src="images/star-fill.png" alt="a star filled with the color purple" class="col-1">
-                    <img src="images/star-fill.png" alt="a star filled with the color purple" class="col-1">
-                    <img src="images/star-half.png" alt="a star half filled with the color purple" class="col-1">
-                    <img src="images/star-empty.png" alt="a star empty" class="col-1">
-                </div>
-                <ul>
-                    <li>Vis-ma-vie / Etudes de Notes / Caméra</li>
-                    <li>Field Studies / Interviews (Anglais / Français)</li>
-                    <li>Sondages / Focus Group</li>
-                    <li>Social Listening / Analyse de réputation</li>
-                    <li>Eye-tracking / Heatmaps</li>
-                    <li>Analyse de données utilisateurs : Tasks / Clic Stream / Searchlogs / Analytics </li>
-                    <li>A/B tests</li>
-                    <li>Concept Testing / Market Fit</li>
-                    <li>Rapports d'analyse</li>
-                </ul>
-            </article>
-            <article>
-                <h3 class="text-uppercase">test utilisateurs</h3>
-                <div class="row stars-container">
-                    <img src="images/star-fill.png" alt="a star filled with the color purple" class="col-1">
-                    <img src="images/star-fill.png" alt="a star filled with the color purple" class="col-1">
-                    <img src="images/star-fill.png" alt="a star filled with the color purple" class="col-1">
-                    <img src="images/star-fill.png" alt="a star filled with the color purple" class="col-1">
-                    <img src="images/star-half.png" alt="a star half filled with the color purple" class="col-1">
-                </div>
-                <ul>
-                    <li>Protocoles de tests</li>
-                    <li>Rapports de tests + Sheets</li>
-                    <li>A/B Test</li>
-                    <li>Guerilla Test</li>
-                    <li>Tree Testing</li>
-                    <li>Test d'Utilisabilité</li>
-                    <li>Audit Ergonomique</li>
-                    <li>Test RITE (Rapide Iterative Testing and Evaluation)</li>
-                </ul>
-            </article>
-            <article>
-                <h3 class="text-uppercase">ux design</h3>
-                <div class="row stars-container">
-                    <img src="images/star-fill.png" alt="a star filled with the color purple" class="col-1">
-                    <img src="images/star-fill.png" alt="a star filled with the color purple" class="col-1">
-                    <img src="images/star-fill.png" alt="a star filled with the color purple" class="col-1">
-                    <img src="images/star-fill.png" alt="a star filled with the color purple" class="col-1">
-                    <img src="images/star-half.png" alt="a star half filled with the color purple" class="col-1">
-                </div>
-                <ul>
-                    <li>Personae</li>
-                    <li>Customer Journey Map</li>
-                    <li>Experience Map</li>
-                    <li>User Flows / Flowcharts</li>
-                    <li>Service Blueprint</li>
-                    <li>Analyse compétitive UX</li>
-                    <li>Quality Analysis</li>
-                    <li>Inventaire de contenus</li>
-                    <li>Use Cases</li>
-                    <li>Wireframes / Prototype Basse-Definition</li>
-                    <li>Rapports d'Utilisabilité</li>
-                    <li>Rapports de Sondages / Interviews</li>
-                    <li>Architecture de l'information</li>
-                </ul>
-            </article>
-            <article>
-                <h3 class="text-uppercase">ui design</h3>
-                <div class="row stars-container">
-                    <img src="images/star-fill.png" alt="a star filled with the color purple" class="col-1">
-                    <img src="images/star-fill.png" alt="a star filled with the color purple" class="col-1">
-                    <img src="images/star-fill.png" alt="a star filled with the color purple" class="col-1">
-                    <img src="images/star-half.png" alt="a star half filled with the color purple" class="col-1">
-                    <img src="images/star-empty.png" alt="a star empty" class="col-1">
-                </div>
-                <ul>
-                    <li>Guide de Style</li>
-                    <li>Moodboards</li>
-                    <li>Direction Artistique Digitale</li>
-                    <li>Grilles & Composants Atomiques</li>
-                    <li>Design System</li>
-                    <li>Maquettes / Prototype Haute-Définition</li>
-                    <li>Storyboard d'interaction</li>
-                    <li>Interaction Design (JSON)</li>
-                    <li>Audit Accessibilité RGAA</li>
-                </ul>
-            </article>
-            <article>
-                <h3 class="text-uppercase">travail d'équipe</h3>
-                <div class="row stars-container">
-                    <img src="images/star-fill.png" alt="a star filled with the color purple" class="col-1">
-                    <img src="images/star-fill.png" alt="a star filled with the color purple" class="col-1">
-                    <img src="images/star-fill.png" alt="a star filled with the color purple" class="col-1">
-                    <img src="images/star-fill.png" alt="a star filled with the color purple" class="col-1">
-                    <img src="images/star-empty.png" alt="a star empty" class="col-1">
-                </div>
-                <ul>
-                    <li>Lead d'équipes d'UX/UI Designers</li>
-                    <li>Autonomie en combinaison de disciplines créatives : Directeur artistique, graphiste, motion designer...</li>
-                    <li>Intégration harmonieuse avec les ingénieurs : developpeurs, data-analystes, data-scientists, IoT...</li>
-                    <li>Drivée par des gestions de projets efficaces : Product Owner, Account Manager, AMOA, Chief Product Officer...</li>
-                </ul>
-            </article>
-            <article>
-                <h3 class="text-uppercase">logiciels les plus utilisés en projets</h3>
-                <ul>
-                    <li class="list-unstyled">
-                        <i class="fa-brands fa-figma fa-2x"></i>
-                        <h4 class="text-uppercase">figma</h4>
-                        <div class="row stars-container">
-                            <img src="images/star-fill.png" alt="a star filled with the color purple" class="col-1">
-                            <img src="images/star-fill.png" alt="a star filled with the color purple" class="col-1">
-                            <img src="images/star-fill.png" alt="a star filled with the color purple" class="col-1">
-                            <img src="images/star-fill.png" alt="a star filled with the color purple" class="col-1">
-                            <img src="images/star-half.png" alt="a star half filled with the color purple" class="col-1">
+            <div class="ux-ui-skills-container">
+                <article id="facilitation">
+                    <h3 class="text-uppercase">facilitation d'ateliers</h3>
+                    <div class="row stars-container">
+                        <img src="images/star-fill.png" alt="a star filled with the color purple" class="col-1">
+                        <img src="images/star-fill.png" alt="a star filled with the color purple" class="col-1">
+                        <img src="images/star-fill.png" alt="a star filled with the color purple" class="col-1">
+                        <img src="images/star-fill.png" alt="a star filled with the color purple" class="col-1">
+                        <img src="images/star-half.png" alt="a star half filled with the color purple" class="col-1">
+                    </div>
+                    <ul class="mb-4 col-10">
+                        <li>Design Sprint (Time-to-Market)</li>
+                        <li>Hackathon, Crazy 8</li>
+                        <li>Co-création pluri-disciplinaire</li>
+                        <li>Design Thinking (Discovery, Empathy, Priorisation, Idéation, Prototyping, Critique)</li>
+                        <li>Serious Games (Lego Serious Play)</li>
+                    </ul>
+                </article>
+                <article>
+                    <h3 class="text-uppercase">ux research</h3>
+                    <div class="row stars-container">
+                        <img src="images/star-fill.png" alt="a star filled with the color purple" class="col-1">
+                        <img src="images/star-fill.png" alt="a star filled with the color purple" class="col-1">
+                        <img src="images/star-fill.png" alt="a star filled with the color purple" class="col-1">
+                        <img src="images/star-half.png" alt="a star half filled with the color purple" class="col-1">
+                        <img src="images/star-empty.png" alt="a star empty" class="col-1">
+                    </div>
+                    <ul class="mb-4 col-10">
+                        <li>Vis-ma-vie / Etudes de Notes / Caméra</li>
+                        <li>Field Studies / Interviews (Anglais / Français)</li>
+                        <li>Sondages / Focus Group</li>
+                        <li>Social Listening / Analyse de réputation</li>
+                        <li>Eye-tracking / Heatmaps</li>
+                        <li>Analyse de données utilisateurs : Tasks / Clic Stream / Searchlogs / Analytics </li>
+                        <li>A/B tests</li>
+                        <li>Concept Testing / Market Fit</li>
+                        <li>Rapports d'analyse</li>
+                    </ul>
+                </article>
+                <article>
+                    <h3 class="text-uppercase">test utilisateurs</h3>
+                    <div class="row stars-container">
+                        <img src="images/star-fill.png" alt="a star filled with the color purple" class="col-1">
+                        <img src="images/star-fill.png" alt="a star filled with the color purple" class="col-1">
+                        <img src="images/star-fill.png" alt="a star filled with the color purple" class="col-1">
+                        <img src="images/star-fill.png" alt="a star filled with the color purple" class="col-1">
+                        <img src="images/star-half.png" alt="a star half filled with the color purple" class="col-1">
+                    </div>
+                    <ul class="mb-4 col-10">
+                        <li>Protocoles de tests</li>
+                        <li>Rapports de tests + Sheets</li>
+                        <li>A/B Test</li>
+                        <li>Guerilla Test</li>
+                        <li>Tree Testing</li>
+                        <li>Test d'Utilisabilité</li>
+                        <li>Audit Ergonomique</li>
+                        <li>Test RITE (Rapide Iterative Testing and Evaluation)</li>
+                    </ul>
+                </article>
+                <article>
+                    <h3 class="text-uppercase">ux design</h3>
+                    <div class="row stars-container">
+                        <img src="images/star-fill.png" alt="a star filled with the color purple" class="col-1">
+                        <img src="images/star-fill.png" alt="a star filled with the color purple" class="col-1">
+                        <img src="images/star-fill.png" alt="a star filled with the color purple" class="col-1">
+                        <img src="images/star-fill.png" alt="a star filled with the color purple" class="col-1">
+                        <img src="images/star-half.png" alt="a star half filled with the color purple" class="col-1">
+                    </div>
+                    <ul class="mb-4">
+                        <li>Personae</li>
+                        <li>Customer Journey Map</li>
+                        <li>Experience Map</li>
+                        <li>User Flows / Flowcharts</li>
+                        <li>Service Blueprint</li>
+                        <li>Analyse compétitive UX</li>
+                        <li>Quality Analysis</li>
+                        <li>Inventaire de contenus</li>
+                        <li>Use Cases</li>
+                        <li>Wireframes / Prototype Basse-Definition</li>
+                        <li>Rapports d'Utilisabilité</li>
+                        <li>Rapports de Sondages / Interviews</li>
+                        <li>Architecture de l'information</li>
+                    </ul>
+                </article>
+                <article>
+                    <h3 class="text-uppercase">ui design</h3>
+                    <div class="row stars-container">
+                        <img src="images/star-fill.png" alt="a star filled with the color purple" class="col-1">
+                        <img src="images/star-fill.png" alt="a star filled with the color purple" class="col-1">
+                        <img src="images/star-fill.png" alt="a star filled with the color purple" class="col-1">
+                        <img src="images/star-half.png" alt="a star half filled with the color purple" class="col-1">
+                        <img src="images/star-empty.png" alt="a star empty" class="col-1">
+                    </div>
+                    <ul class="mb-4">
+                        <li>Guide de Style</li>
+                        <li>Moodboards</li>
+                        <li>Direction Artistique Digitale</li>
+                        <li>Grilles & Composants Atomiques</li>
+                        <li>Design System</li>
+                        <li>Maquettes / Prototype Haute-Définition</li>
+                        <li>Storyboard d'interaction</li>
+                        <li>Interaction Design (JSON)</li>
+                        <li>Audit Accessibilité RGAA</li>
+                    </ul>
+                </article>
+                <article>
+                    <h3 class="text-uppercase">travail d'équipe</h3>
+                    <div class="row stars-container">
+                        <img src="images/star-fill.png" alt="a star filled with the color purple" class="col-1">
+                        <img src="images/star-fill.png" alt="a star filled with the color purple" class="col-1">
+                        <img src="images/star-fill.png" alt="a star filled with the color purple" class="col-1">
+                        <img src="images/star-fill.png" alt="a star filled with the color purple" class="col-1">
+                        <img src="images/star-empty.png" alt="a star empty" class="col-1">
+                    </div>
+                    <ul class="mb-5 col-10 col-lg-12">
+                        <li>Lead d'équipes d'UX/UI Designers</li>
+                        <li>Autonomie en combinaison de disciplines créatives : Directeur artistique, graphiste, motion
+                            designer...</li>
+                        <li>Intégration harmonieuse avec les ingénieurs : developpeurs, data-analystes, data-scientists,
+                            IoT...</li>
+                        <li>Drivée par des gestions de projets efficaces : Product Owner, Account Manager, AMOA, Chief
+                            Product Officer...</li>
+                    </ul>
+                </article>
+            </div>
+        </section>
+        <section id="softwares">
+            <article class="softwares-container">
+                <h3 class="text-uppercase softwares-title">logiciels les plus utilisés en projets</h3>
+                <ul class="mb-0 p-0">
+                    <li class="list-unstyled row align-items-center">
+                        <div class="sw-logo-container col">
+                            <i class="fa-brands fa-figma fa-2x"></i>
+                        </div>
+                        <div class="col-9 sw-details">
+                            <h4 class="text-uppercase mb-0">figma</h4>
+                            <div class="row stars-container m-0">
+                                <img src="images/star-fill.png" alt="a star filled with the color purple" class="col-1">
+                                <img src="images/star-fill.png" alt="a star filled with the color purple" class="col-1">
+                                <img src="images/star-fill.png" alt="a star filled with the color purple" class="col-1">
+                                <img src="images/star-fill.png" alt="a star filled with the color purple" class="col-1">
+                                <img src="images/star-half.png" alt="a star half filled with the color purple"
+                                    class="col-1">
+                            </div>
                         </div>
                     </li>
-                    <li class="list-unstyled">
-                        <span class="icon-software">Xd</span>
-                        <h4 class="text-uppercase">adobe xd</h4>
-                        <div class="row stars-container">
-                            <img src="images/star-fill.png" alt="a star filled with the color purple" class="col-1">
-                            <img src="images/star-fill.png" alt="a star filled with the color purple" class="col-1">
-                            <img src="images/star-fill.png" alt="a star filled with the color purple" class="col-1">
-                            <img src="images/star-fill.png" alt="a star filled with the color purple" class="col-1">
-                            <img src="images/star-empty.png" alt="a star that's empty" class="col-1">
+                    <li class="list-unstyled row align-items-center">
+                        <div class="sw-logo-container col">
+                            <span class="icon-software">Xd</span>
+                        </div>
+                        <div class="col-9 sw-details">
+                            <h4 class="text-uppercase mb-0">adobe xd</h4>
+                            <div class="row stars-container m-0">
+                                <img src="images/star-fill.png" alt="a star filled with the color purple" class="col-1">
+                                <img src="images/star-fill.png" alt="a star filled with the color purple" class="col-1">
+                                <img src="images/star-fill.png" alt="a star filled with the color purple" class="col-1">
+                                <img src="images/star-fill.png" alt="a star filled with the color purple" class="col-1">
+                                <img src="images/star-empty.png" alt="a star that's empty" class="col-1">
+                            </div>
                         </div>
                     </li>
-                    <li class="list-unstyled">
-                        <span class="icon-software">Ai</span>
-                        <h4 class="text-uppercase">Illustrator</h4>
-                        <div class="row stars-container">
-                            <img src="images/star-fill.png" alt="a star filled with the color purple" class="col-1">
-                            <img src="images/star-fill.png" alt="a star filled with the color purple" class="col-1">
-                            <img src="images/star-fill.png" alt="a star filled with the color purple" class="col-1">
-                            <img src="images/star-fill.png" alt="a star filled with the color purple" class="col-1">
-                            <img src="images/star-empty.png" alt="a star that's empty" class="col-1">
+                    <li class="list-unstyled row align-items-center">
+                        <div class="sw-logo-container col">
+                            <span class="icon-software">Ai</span>
+                        </div>
+                        <div class="col-9 sw-details">
+                            <h4 class="text-uppercase mb-0">Illustrator</h4>
+                            <div class="row stars-container m-0">
+                                <img src="images/star-fill.png" alt="a star filled with the color purple" class="col-1">
+                                <img src="images/star-fill.png" alt="a star filled with the color purple" class="col-1">
+                                <img src="images/star-fill.png" alt="a star filled with the color purple" class="col-1">
+                                <img src="images/star-fill.png" alt="a star filled with the color purple" class="col-1">
+                                <img src="images/star-empty.png" alt="a star that's empty" class="col-1">
+                            </div>
                         </div>
                     </li>
-                    <li class="list-unstyled">
-                        <span class="icon-software">Ps</span>
-                        <h4 class="text-uppercase">Photoshop</h4>
-                        <div class="row stars-container">
-                            <img src="images/star-fill.png" alt="a star filled with the color purple" class="col-1">
-                            <img src="images/star-fill.png" alt="a star filled with the color purple" class="col-1">
-                            <img src="images/star-fill.png" alt="a star filled with the color purple" class="col-1">
-                            <img src="images/star-empty.png" alt="a star that's empty" class="col-1">
-                            <img src="images/star-empty.png" alt="a star that's empty" class="col-1">
+                    <li class="list-unstyled row align-items-center">
+                        <div class="sw-logo-container col">
+                            <span class="icon-software">Ps</span>
+                        </div>
+                        <div class="col-9 sw-details">
+                            <h4 class="text-uppercase mb-0">Photoshop</h4>
+                            <div class="row stars-container m-0">
+                                <img src="images/star-fill.png" alt="a star filled with the color purple" class="col-1">
+                                <img src="images/star-fill.png" alt="a star filled with the color purple" class="col-1">
+                                <img src="images/star-fill.png" alt="a star filled with the color purple" class="col-1">
+                                <img src="images/star-empty.png" alt="a star that's empty" class="col-1">
+                                <img src="images/star-empty.png" alt="a star that's empty" class="col-1">
+                            </div>
                         </div>
                     </li>
-                    <li class="list-unstyled">
-                        <span class="icon-software">Id</span>
-                        <h4 class="text-uppercase">in design</h4>
-                        <div class="row stars-container">
-                            <img src="images/star-fill.png" alt="a star filled with the color purple" class="col-1">
-                            <img src="images/star-fill.png" alt="a star filled with the color purple" class="col-1">
-                            <img src="images/star-fill.png" alt="a star filled with the color purple" class="col-1">
-                            <img src="images/star-empty.png" alt="a star that's empty" class="col-1">
-                            <img src="images/star-empty.png" alt="a star that's empty" class="col-1">
+                    <li class="list-unstyled row align-items-center">
+                        <div class="sw-logo-container col">
+                            <span class="icon-software">Id</span>
+                        </div>
+                        <div class="col-9 sw-details">
+                            <h4 class="text-uppercase mb-0">in design</h4>
+                            <div class="row stars-container m-0">
+                                <img src="images/star-fill.png" alt="a star filled with the color purple" class="col-1">
+                                <img src="images/star-fill.png" alt="a star filled with the color purple" class="col-1">
+                                <img src="images/star-fill.png" alt="a star filled with the color purple" class="col-1">
+                                <img src="images/star-empty.png" alt="a star that's empty" class="col-1">
+                                <img src="images/star-empty.png" alt="a star that's empty" class="col-1">
+                            </div>
                         </div>
                     </li>
-                    <li class="list-unstyled">
-                        <span class="icon-software">Ae</span>
-                        <h4 class="text-uppercase">after effect</h4>
-                        <div class="row stars-container">
-                            <img src="images/star-fill.png" alt="a star filled with the color purple" class="col-1">
-                            <img src="images/star-fill.png" alt="a star filled with the color purple" class="col-1">
-                            <img src="images/star-empty.png" alt="a star that's empty" class="col-1">
-                            <img src="images/star-empty.png" alt="a star that's empty" class="col-1">
-                            <img src="images/star-empty.png" alt="a star that's empty" class="col-1">
+                    <li class="list-unstyled row align-items-center">
+                        <div class="sw-logo-container col">
+                            <span class="icon-software">Ae</span>
+                        </div>
+                        <div class="col-9 sw-details">
+                            <h4 class="text-uppercase mb-0">after effect</h4>
+                            <div class="row stars-container m-0">
+                                <img src="images/star-fill.png" alt="a star filled with the color purple" class="col-1">
+                                <img src="images/star-fill.png" alt="a star filled with the color purple" class="col-1">
+                                <img src="images/star-empty.png" alt="a star that's empty" class="col-1">
+                                <img src="images/star-empty.png" alt="a star that's empty" class="col-1">
+                                <img src="images/star-empty.png" alt="a star that's empty" class="col-1">
+                            </div>
                         </div>
                     </li>
                 </ul>
-                <a class="rounded" href="">Téléchargez le CV <img src="images/cv-download.png" alt="download icon"></a>
+                <a class="ctc-btn text-nowrap adjust-size" href="">Téléchargez le CV <img src="images/cv-download.png"
+                        alt="download icon"></a>
             </article>
         </section>
+    </div>
         <section id="verbatims">
             <h2 class="text-uppercase">verbatims</h2>
+            <div id="verbatims-container">
             <article>
-                <h3 class="fw-bold">Guillaume De Scorbiac</h3>
-                <p>Fondateur - Com in Web</p>
-                <img src="images/g-descorbiac" alt="photo de Guillaume De Scorbiac">
-                <p><span class="fw-bold">"</span> Je recommande Hélène pour son organisation irréprochable et son talent au service des projets qui lui sont confiés<span class="fw-bold">"</span></p>
+                <div class="verbatim-col">
+                    <h3 class="fw-bold">Guillaume De Scorbiac</h3>
+                    <p>Fondateur - Com in Web</p>
+                    <div class="verbatim-img-container">
+                        <img src="images/profile-test.webp" alt="photo de Guillaume De Scorbiac">
+                    </div>
+                </div>
+                <p class="verbatim-txt">Je recommande Hélène pour son organisation irréprochable et son
+                    talent au service des projets qui lui sont confiés</p>
             </article>
             <article>
-                <h3 class="fw-bold">Maïlys Levasseur</h3>
-                <p>Fondatrice - MaiSpark</p>
-                <img src="images/m-levasseur" alt="photo de Maïlys Levasseur">
-                <p><span class="fw-bold">"</span> Le travail que tu as fourni était de grande qualité, il a répondu à mes attentes et tes propositions étaient à la fois variées et originales. Donc merci !<span class="fw-bold">"</span></p>
+                <div class="verbatim-col">
+                    <h3 class="fw-bold">Maïlys Levasseur</h3>
+                    <p>Fondatrice - MaiSpark</p>
+                    <div class="verbatim-img-container">
+                        <img src="images/profile-test.webp" alt="photo de Maïlys Levasseur">
+                    </div>
+                </div>
+                <p class="verbatim-txt2">Le travail que tu as fourni était de <br class="d-none-d-lg-block">grande qualité,<br class="d-none-d-lg-block"> il a répondu
+                    à mes attentes et tes propositions étaient à la fois variées et originales. Donc merci !</p>
             </article>
+        </div>
             <article>
-                <h3 class="linkedin-verify text-uppercase text-center">vérifiez les recommandations :</h3>
+                <h3 class="linkedin-verify text-uppercase text-center">vérifiez les <br class="d-sm-block d-md-none">
+                    recommandations :</h3>
                 <img class="img-fluid" src="images/linkedin-logo.png" alt="linkedin logo">
             </article>
         </section>
         <section id="contact">
-            <h3 class="text-uppercase text-center">connectons-nous !</h3>
+            <h3 class="text-uppercase text-center fw-bolder">connectons-nous !</h3>
             <div class="row p-0 m-0" id="social-container">
-              <a href="" class="social"><i class="fa-brands fa-linkedin-in social-logo"></i></a>
-              <a href="" class="social"><i class="fa-brands fa-instagram social-logo"></i></a>
-              <a href="" class="social"><i class="fa-brands fa-whatsapp social-logo"></i></a>
+                <a href="" class="social"><i class="fa-brands fa-linkedin-in social-logo"></i></a>
+                <a href="" class="social"><i class="fa-brands fa-instagram social-logo"></i></a>
+                <a href="" class="social"><i class="fa-brands fa-whatsapp social-logo"></i></a>
             </div>
-          </section>
-        </main>
-        <!-- footer -->
-  <footer>
-    <div class="row">
-      <div class="col col-sm-6 d-flex align-items-center" id="footer-left-container">
-        <p class="fw-bold text-nowrap" id="footer-name">Hélène Ramette</p>
-        <p id="footer-copyright">Copyrights © <span id="year"></span></p>
-      </div>
-      <div class="col col-sm-6 d-flex align-items-center justify-content-end">
-        <ul id="footer-ul" class="p-0">
-          <li>
-            <a href="about.html" class="footer-links">À propos</a>
-          </li>
-          <li>
-            <a href="" class="footer-links">CGV</a>
-          </li>
-          <li>
-            <a href="" class="footer-links">Mentions légales</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </footer>
-  <script src="script.js"></script>
-    </body>
+        </section>
+    </main>
+    <!-- footer -->
+    <footer>
+        <div class="row">
+            <div class="col col-sm-6 d-flex align-items-center" id="footer-left-container">
+                <p class="fw-bold text-nowrap" id="footer-name">Hélène Ramette</p>
+                <p id="footer-copyright">Copyrights © <span id="year"></span></p>
+            </div>
+            <div class="col col-sm-6 d-flex align-items-center" id="footer-right-container">
+                <ul id="footer-ul" class="p-0 list-unstyled">
+                    <li>
+                        <a href="index.html" class="footer-links">Accueil</a>
+                    </li>
+                    <li>
+                        <a href="" class="footer-links">CGV</a>
+                    </li>
+                    <li>
+                        <a href="" class="footer-links">Mentions légales</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
 
 </html>

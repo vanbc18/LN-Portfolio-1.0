@@ -451,7 +451,7 @@
       justify-content: center !important;
       text-align: center !important;
       align-items: center !important;
-      font-weight: bold !important;
+      font-weight: 600 !important;
     }
 
     .outline {

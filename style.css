@@ -578,6 +578,7 @@ li > .footer-links {
 
   #footer-name, #footer-copyright {
     margin: 0 !important;
+    width: 120px;
   }
 
   #footer-ul {

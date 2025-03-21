@@ -1126,9 +1126,50 @@ justify-content: end !important;
 #verbatims > article:nth-child(3) {
   margin-bottom: 0px;
 }
-
   }
 
+  @media screen and (min-width: 1220px) {
+    #hero-section-about {
+      background-position: 300px !important;
+      padding: 50px 450px 54px 150px;
+      margin-top: 70px;
+      width: 100%;
+      height: 100vh;
+    }
+
+    #verbatims-container article {
+      gap: 50px !important;
+    }
+
+    #verbatims-container article:last-child {
+      margin-left: 30px;
+    }
+
+    .verbatim-txt::before {
+      font-size: var(--txt-84);
+      left: 285px;
+      margin-top: -20px;
+  }
+  
+    .verbatim-txt2::before {
+      left: 813px;
+    }
+  
+  .verbatim-txt::after {
+    font-size: var(--txt-84);
+    right: 645px;
+    margin-top: -83px;
+  }
+  
+  .verbatim-txt2::after {
+    right: 117px;
+    margin-top: -95px;
+  }
+
+  #skills {
+    margin-top: 80px;
+  }
+}
   @media screen and (min-width: 1280px) {
 
     #nav-right-container {
@@ -1231,4 +1272,30 @@ justify-content: end !important;
     .hero-text-container {
       max-width: 490px !important;
     }
+
+    #skills {
+      margin-top: 30px;
+    }
+
+    .verbatim-txt::before {
+      font-size: var(--txt-84);
+      left: 285px;
+      margin-top: -20px;
+  }
+  
+    .verbatim-txt2::before {
+      left: 945px;
+    }
+  
+  .verbatim-txt::after {
+    font-size: var(--txt-84);
+    right: 113px;
+    margin-top: -70px;
+  }
+  
+  .verbatim-txt2::after {
+    right: 760px;
+    margin-top: -60px;
+  }
+  
   }

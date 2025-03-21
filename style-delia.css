@@ -786,4 +786,9 @@
       left: 30px !important;
       z-index: 0 !important;
     }
+
+    #question-btn {
+      margin-left: -100px;
+      width: 300px;
+    }
   }

@@ -42,15 +42,24 @@
   --txt-84: 84px;
   --txt-106: 106px;
   --font-size-ctc-btn: 20px;
-  --extra-bold: 800;
+  --extra-bold: 900;
   --medium: 500;
   --small: 400;
   --letter-spacing-sm: 1px;
+  --section-shadow: -3px 0 60px hsla(205, 15%, 16%, 20%);
+  --card-shadow: 1px 2px 7px 	hsla(40, 98%, 16%, 20%)
 }
 
 * {
   font-family: var(--font-txt);
   box-sizing: border-box;
+}
+
+body {
+  background-image: url(images/Image_Background_Mobile.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
 }
 
 main {
@@ -114,6 +123,16 @@ nav {
   color: var(--black1) !important;
 }
 
+.nav-item:first-child {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: fit-content;
+  min-height: fit-content;
+  padding: 5px;
+  box-shadow: rgba(0, 0, 0, 0.16) 1px 2px 7px;
+}
+
 .icon-container, .profile-pic-container {
   display: flex;
   justify-content: center;
@@ -124,14 +143,22 @@ nav {
   background-color: var(--white);
   padding: 0 !important;
   font-weight: 600;
+  box-shadow: rgba(0, 0, 0, 0.16) 1px 2px 7px;
+}
+
+.outline {
+  position: relative;
+  top: 2px;
+  transform: scale(0.8);
 }
 
 .profile-pic-container img {
-  object-fit: cover;
   width: 50px !important;
   height: 50px !important;
   border-radius: 100%;
-  border: 3px solid var(--white) !important;
+  border: 3.5px solid var(--white) !important;
+  object-fit: cover;
+  image-rendering:crisp-edges;
 }
 
 section {
@@ -199,6 +226,7 @@ h2 {
   font-size: var(--txt-20);
   border-bottom: 1px solid;
   font-style: italic;
+  line-height: 40px !important;
   text-shadow: 3px 2px 0px hsla(28, 100%, 55%, 0.25);
   margin-bottom: var(--mb-30) !important;
 }
@@ -212,6 +240,7 @@ h2 {
   border-radius: 20px;
   padding: var(--paddingY-30);
   margin-bottom: var(--mb-50);
+  box-shadow: var(--section-shadow);
 }
 
 .card {
@@ -219,8 +248,12 @@ h2 {
   overflow: hidden !important;
   border-radius: 10px !important;
   width: 95vw !important;
-  min-height: 130px !important;
   margin-bottom: var(--mb-15);
+  box-shadow: var(--card-shadow);
+}
+
+#case-study > div > .card {
+  height: 150px !important;
 }
 
 .card > .row {
@@ -248,12 +281,15 @@ h3 {
 
 .img-container {
   position: relative;
+  overflow-y: hidden;
 }
 
 .img-container > img {
   width: 100%;
   height: 100%;
   object-fit: cover !important;
+  transform: scale(0.9);
+  background-position: 80% 100%;
 }
 
 #delia-card {
@@ -313,32 +349,25 @@ h3 {
   margin-right: 5px;
 }
 
-.iteration-list-item::before {
+.iteration-list-item::before, .checked::before {
   content: "";
-  background-image: url(images/Squares.svg);
   background-repeat: no-repeat;
-  background-size: contain;
-  height: 20px;
-  width: 20px;
-  min-height: 20px;
-  min-width: 20px;
+  background-size: cover;
+  height: 25px;
+  width: 25px;
+  min-height: 25px;
+  min-width: 25px;
   display: inline-block;
   vertical-align: middle;
   margin-right: 10px;
 }
 
+.iteration-list-item::before {
+  background-image: url(images/Squares.svg);
+}
+
 .checked::before {
-  content: "";
   background-image: url(images/Checked-squares.svg) !important;
-  background-repeat: no-repeat;
-  background-size: contain;
-  height: 20px;
-  width: 20px;
-  min-height: 20px;
-  min-width: 20px;
-  display: inline-block;
-  vertical-align: middle;
-  margin-right: 10px;
 }
 
 li {
@@ -355,6 +384,8 @@ li:last-child {
   font-weight: var(--medium) !important;
   opacity: 0.5;
   z-index: 5;
+  display: flex;
+  align-items: center;
 }
 
 .checked {
@@ -373,7 +404,8 @@ li:last-child {
   border-radius: 15px;
   padding: 0 0 0 15px;
   cursor: pointer;
-  margin-top: 30px;
+  margin-top: 20px;
+  transform: scale(1.2);
 }
 
 #contact {
@@ -381,6 +413,7 @@ li:last-child {
   background-color: var(--white);
   padding-top: 30px;
   overflow: hidden;
+  box-shadow: var(--section-shadow);
 }
 
 #contact > h3 {
@@ -427,23 +460,27 @@ footer {
   display: flex;
   flex-direction: column;
   justify-content: start !important;
-  margin: 27.5px 0;
+  margin: 35px 0 0 0;
 }
 
 #footer-name {
   font-size: var(--txt-16) !important;
   justify-self: start !important;
   width: 100%;
+  margin-bottom: 10px;
 }
 
 #footer-copyright, .footer-links {
-  font-size: var(--txt-12) !important;
+  font-size: var(--txt-14) !important;
   justify-self: start !important;
   width: 100%;
+  opacity: 0.7;
 }
 
 #footer-ul {
   margin: 18px 0 !important;
+  position: relative;
+  right: 35% !important;
 }
 
 li > .footer-links {
@@ -454,8 +491,23 @@ li > .footer-links {
 
 @media only screen and (min-width: 768px) {
 
+  body {
+    background-image: url(images/Image_Background_Tablette.jpg)
+  }
+
   #nav-container {
     padding: 10px 6px !important;
+  }
+
+  .navbar {
+    padding: 0 !important;
+    margin: 0 30px !important;
+  }
+
+  #nav-container {
+    padding: 10px 0 !important;
+    width: 100vw !important;
+    margin: 0;
   }
 
   #nav-right-container {
@@ -510,17 +562,21 @@ li > .footer-links {
 
   .hero-title1, .hero-title2 {
     font-size: var(--txt-80) !important;
-    text-shadow: hsla(28, 100%, 55%, 0.8) 5px 5px 0px;
+    text-shadow: hsla(28, 100%, 55%, 0.8) 7px 7px 0px;
   }
 
   .hero-title3 {
     font-size: var(--txt-106) !important;
-    text-shadow: hsla(28, 100%, 55%, 0.6) 5px 5px 0px;
+    text-shadow: hsla(28, 100%, 55%, 0.6) 7px 7px 0px;
   }
 
   .hero-title4, .hero-title5 {
     font-size: var(--txt-84) !important;
-    text-shadow: hsla(28, 100%, 55%, 0.4) 5px 5px 0px;
+    text-shadow: hsla(28, 100%, 55%, 0.4) 7px 7px 0px;
+  }
+
+  h2 {
+    font-size: var(--txt-20) !important;
   }
 
   /* CASE STUDIES */
@@ -533,6 +589,10 @@ li > .footer-links {
   #case-study > h2 {
     text-align: start !important;
     width: 90%;
+  }
+
+  #case-study > div > .card {
+    height: 242px !important;
   }
 
   .card-link-container > .card {
@@ -578,7 +638,8 @@ li > .footer-links {
 
   #footer-name, #footer-copyright {
     margin: 0 !important;
-    width: 120px;
+    width: 120px !important;
+    text-wrap: nowrap !important;
   }
 
   #footer-ul {
@@ -588,10 +649,57 @@ li > .footer-links {
     justify-content: end;
     align-items: baseline;
     margin: 0 !important;
+    right: -35% !important;
   }
 }
 
 @media only screen and (min-width: 1024px) {
+
+  body {
+    background-image: url(images/Image_Background_Desktop.jpg);
+  }
+
+  .navbar {
+    padding: 0 !important;
+    margin: 0 30px !important;
+  }
+
+  #nav-container {
+    padding: 10px 0 !important;
+    width: 100vw !important;
+    margin: 0;
+  }
+
+  #nav-title {
+    min-width: 250px !important;
+  }
+
+  #nav-right-container {
+    margin: 0 -50px !important;
+  }
+
+  .nav-link {
+    height: 50px;
+  }
+
+  .ctc-word {
+    padding: 0.5px 10px 0.5px 18px !important;
+  }
+
+  .outline {
+    margin: 8px 10px 8px 0;
+    padding: 3px 0;
+    transform: scale(0.8);
+  }
+
+  .profile-pic-container {
+    width: 50px !important;
+    height: 50px !important;
+  }
+
+  #hero-section {
+    margin: 0 64px;
+  }
 
   .img-lg-container img {
     width: 400px;
@@ -600,15 +708,23 @@ li > .footer-links {
 
   /* CASE STUDY */
 
+  #case-study {
+    width: 85%;
+    margin: 0 auto 50px auto;
+  }
   .card-link-container > .card {
     max-width: 100%;
   }
 
+  .card-link-container img {
+    image-rendering: pixelated optimizeQuality;
+  }
+
   .card-link-container {
     display: grid;
-    grid-template-columns: 39vw 39vw;
-    grid-template-rows: 200px 200px;
-    gap: 20px;
+    grid-template-columns: 38vw 38vw;
+    grid-template-rows: 240px 240px;
+    gap: 15px;
     align-items: center;
   }
   
@@ -620,7 +736,8 @@ li > .footer-links {
   /* ITERATION LG*/
   #iteration-card-container {
     display: grid;
-    grid-template-columns: repeat(3, 316.67px);
+    width: 83%;
+    grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 230px;
     grid-gap: 20px !important;
     margin-bottom: var(--mb-30);
@@ -635,5 +752,6 @@ li > .footer-links {
 
   #content-card, #functionality-card {
     height: 170px;
-}
+  }
+
 }

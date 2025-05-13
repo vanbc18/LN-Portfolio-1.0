@@ -67,9 +67,19 @@
     font-family: var(--font-txt);
     box-sizing: border-box;
   }
+
+  body {
+    background-image: url(images/Image_Background_Delia.jpg);
+    background-attachment: fixed;
+  }
   
   main {
     overflow-x: hidden;
+  }
+  
+  header > img {
+    width: 100%;
+    height: 100%;
   }
   
   nav {
@@ -85,6 +95,7 @@
   #nav-container {
     display: flex;
     padding: var(--padding-header);
+    height: 75px;
   }
   
   #nav-title {
@@ -115,34 +126,41 @@
   .mr-xs {
     margin: 0 10px 0 0 !important;
   }
-
-  .mb-50 {
-    margin-bottom: 50px !important;
-  }
   
   .nav-item {
     padding: 0 !important;
-    
+  }
+
+  .outline::before {
+    padding: 5px;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .outline {
+    width: 40px;
+    height: 40px;
+    position: relative;
+    transform: scale(0.8);
+  }
+
+  .nav-item:first-child, .nav-item:nth-child(1) {
+    box-shadow: var(--nav-item-shadow);
+  }
+
+  .nav-item:first-child img {
+    padding: 13px !important;
+    width: 50px;
+    height: 50px;
   }
   
   .dark {
     color: var(--black1) !important;
   }
   
-  #question-btn > .outline:last-child {
-    box-shadow: var(--box-shadow-light);
-    padding: 5px;
-    border-radius: 12px;
-    width: 40px;
-    height: 40px;
-    display: flex;
-    justify-content: center !important;
-    align-items: center !important;
-    margin-left: 10px;
-  }
-
-
-  .icon-container, .profile-pic-container {
+  .icon-container {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -151,16 +169,42 @@
     border-radius: 100%;
     background-color: var(--white);
     padding: 0 !important;
-    box-shadow: var(--box-shadow-light);
   }
   
   .profile-pic-container img {
     object-fit: cover;
+    object-position: 10% 20%;
     width: 50px !important;
     height: 50px !important;
     border-radius: 100%;
-    border: 2px solid var(--white) !important;
-    box-shadow: var(--box-shadow-light);
+    border: 3px solid var(--white) !important;
+  }
+
+  .profile-pic-container {
+    border-radius: 100%;
+  }
+
+  .profile-pic-container:active {
+    border: 4px solid transparent !important;
+  }
+
+  #contact {
+    background-color: var(--white);
+    padding-top: 30px;
+    overflow: hidden;
+  }
+  
+  #contact > h3 {
+    font-size: var(--txt-16) !important;
+    margin-bottom: 10px;
+    z-index: 4;
+  }
+  
+  #social-container {
+    display: flex;
+    justify-content: center !important;
+    align-items: center;
+    width: 100%;
   }
 
   /* HERO SECTION */
@@ -217,7 +261,7 @@
     padding: var(--padding-card-txt);
     font-size: var(--txt-14) !important;
     width: 100%;
-    border-radius: 8px !important;
+    border-radius: 20px !important;
     box-shadow: var(--box-shadow-light);
     border: transparent !important;
   }
@@ -226,11 +270,12 @@
     display: flex;
     align-items: center !important;
     font-weight: bold;
-    gap: 5px;
+    gap: 10px;
     font-size: var(--txt-14);
     margin: auto 20px !important;
     height: 40px;
     font-size: var(--txt-14) !important;
+    text-transform: none !important;
   }
 
   .card-body {
@@ -239,6 +284,20 @@
 
   #objectifs {
     height: 575px;
+    width: 100%;
+    border-radius: 15px 15px 0 0 !important;
+    margin-bottom: 0 !important;
+    box-shadow: var(--box-shadow-light);
+  }
+
+  #demarche {
+    border-radius: 15px 15px 0 0 !important;
+    box-shadow: var(--box-shadow-light);
+    margin-top: -30px;
+  }
+
+  .mt-50 {
+    margin-top: 50px !important;
   }
 
   #concept {
@@ -246,6 +305,7 @@
     border-radius: 20px 20px 0 0 !important;
     background-color: var(--white);
     margin-bottom: 0 !important;
+    box-shadow: var(--box-shadow-light);
   }
 
   #ideate-section > div > article > .card,
@@ -321,11 +381,11 @@
 
   .swiper {
     background-color: var(--white);
-    width: 96%;
-    margin: 0 8px;
+    width: 100%;
+    height: 80px !important;
+    margin: auto 8px;
     border-radius: 10px;
-    height: 60px;
-    padding: 12px 10px;
+    height: 50px;
     justify-content: center;
     align-items: center;
     box-shadow: 1px 0px 15px 1px rgba(0,0,0,0.2);
@@ -335,13 +395,13 @@
     display: flex;
     justify-content: center !important;
     align-items: center !important;
-    margin: 12px 10px !important;
+    margin: 15px 10px !important;
     background-color: var(--light-blue);
-    height: 36px !important;
+    height: 50px !important;
     border-radius: 5px;
     text-decoration: none;
     color: var(--dark-grey);
-    font-size: var(--txt-14);
+    font-size: var(--txt-20);
   }
  
   .active {
@@ -376,6 +436,13 @@
       padding: 0 !important;
     }
   
+    .nav-link {
+      display: flex !important;
+      justify-content: space-evenly !important;
+      text-align: center !important;
+      align-items: center !important;
+    }
+
     .icon-container {
       display: flex;
       flex-direction: row;
@@ -456,7 +523,7 @@
 
     .outline {
       box-shadow: var(--box-shadow-light);
-      padding: 5px;
+      padding: 0px;
       border-radius: 12px;
       width: 40px;
       height: 40px;
@@ -467,13 +534,19 @@
     }
 
     .back-arrow {
-      padding: 8px;
+      padding: 5px !important;
       margin: 0 5px 0 -5px;
     }
 
     div > a > .outline:last-child {
       width: 50px;
+      height: 360px;
+    }
+
+    .outline:last-child {
+      width: 50px;
       height: 50px;
+      padding: 5px !important;
     }
 
     #delia-link{
@@ -505,7 +578,7 @@
 
     #objectifs{
       max-height: 744px;
-      width: 510px;
+      width: auto;
       justify-self: center;
       padding: 0 !important;
     }
@@ -764,7 +837,7 @@
       flex-direction: column;
       margin: 0 8px;
       border-radius: 10px;
-      height: 330px;
+      height: 400px !important;
       padding: 12px 10px;
       justify-content: center;
       align-items: center;

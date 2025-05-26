@@ -292,8 +292,6 @@
     border-radius: 15px 15px 0 0 !important;
     margin-bottom: 0 !important;
     box-shadow: var(--box-shadow-light);
-    position: relative !important;
-    z-index: 2 !important;
   }
 
   #demarche {
@@ -306,7 +304,6 @@
     padding-top: 50px !important;
     padding-bottom: 50px !important;
     margin-bottom: 50px !important;
-    z-index: 2 !important;
   }
 
   .mt-50 {
@@ -321,7 +318,6 @@
     margin-bottom: 0 !important;
     box-shadow: var(--box-shadow-light);
     margin-top: -65px !important;
-    z-index: 3 !important;
   }
 
   #ideate-section > div > article > .card,
@@ -395,6 +391,9 @@
     padding: 100px 30px;
     border-radius: 15px 15px 0 0 !important;
     color: var(--white);
+    margin-top: -30px;
+    position: relative;
+    z-index: 3 !important;
   }
 
   .swiper {
@@ -579,8 +578,9 @@
     }
 
     #delia-proto-link {
-      margin: var(--mY-50);
+      margin: 50px auto;
       font-size: var(--txt-20) !important;
+      width: 50%;
     }
 
     .swiper-slide > .card {

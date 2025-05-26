@@ -153,6 +153,7 @@
     padding: 10px !important;
     width: 50px !important;
     height: 50px !important;
+    left: 5%;
   }
 
   .nav-item:first-child img {
@@ -393,7 +394,6 @@
     color: var(--white);
     margin-top: -30px;
     position: relative;
-    z-index: 3 !important;
   }
 
   .swiper {
@@ -449,7 +449,7 @@
     }
   
     #nav-right-container {
-      margin: 0 -35px !important;
+      margin: 0 -50px !important;
       padding: 0 !important;
     }
   
@@ -555,7 +555,7 @@
 
     .back-arrow {
       padding: 5px !important;
-      margin: 0 5px 0 -5px;
+      margin: 0 5px 0 -20px;
     }
 
     div > a > .outline:last-child {

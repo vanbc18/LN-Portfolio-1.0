@@ -60,21 +60,20 @@
     --medium: 500;
     --small: 400;
     --letter-spacing-sm: 1px;
-    --box-shadow-light: 1px 1px 10px 2px rgba(0,0,0,0.1);
+    --box-shadow-light: 1px -1px 10px -2px rgba(0,0,0,0.1);
   }
 
   * {
     font-family: var(--font-txt);
     box-sizing: border-box;
   }
-
-  body {
-    background-image: url(images/Image_Background_Delia.jpg);
-    background-attachment: fixed;
-  }
   
   main {
     overflow-x: hidden;
+    background-image: url(images/Image_Background_Delia.jpg);
+    background-size: cover !important;
+    background-position: center;
+    background-attachment: fixed;
   }
   
   header > img {
@@ -148,6 +147,12 @@
 
   .nav-item:first-child, .nav-item:nth-child(1) {
     box-shadow: var(--nav-item-shadow);
+  }
+
+  .back-arrow {
+    padding: 10px !important;
+    width: 50px !important;
+    height: 50px !important;
   }
 
   .nav-item:first-child img {
@@ -284,16 +289,24 @@
 
   #objectifs {
     height: 575px;
-    width: 100%;
     border-radius: 15px 15px 0 0 !important;
     margin-bottom: 0 !important;
     box-shadow: var(--box-shadow-light);
+    position: relative !important;
+    z-index: 2 !important;
   }
 
   #demarche {
+    position: relative;
     border-radius: 15px 15px 0 0 !important;
     box-shadow: var(--box-shadow-light);
-    margin-top: -30px;
+    margin-top: -30px !important;
+    background-color: var(--white-casse);
+    height: 100%;
+    padding-top: 50px !important;
+    padding-bottom: 50px !important;
+    margin-bottom: 50px !important;
+    z-index: 2 !important;
   }
 
   .mt-50 {
@@ -301,11 +314,14 @@
   }
 
   #concept {
+    position: relative;
     padding: 100px 30px 50px 30px !important;
     border-radius: 20px 20px 0 0 !important;
     background-color: var(--white);
     margin-bottom: 0 !important;
     box-shadow: var(--box-shadow-light);
+    margin-top: -65px !important;
+    z-index: 3 !important;
   }
 
   #ideate-section > div > article > .card,
@@ -320,6 +336,8 @@
   #demarche > div > article > .card img {
     border-radius: 0 !important;
     margin: 1.5% !important;
+    width: 300px;
+    height: 300px;
   }
 
   #ideate-section > article > .card > .card-title,
@@ -440,7 +458,10 @@
       display: flex !important;
       justify-content: space-evenly !important;
       text-align: center !important;
-      align-items: center !important;
+      align-items: center !important;;
+      width: 100%;
+      height: 100%;
+      font-weight: 600 !important;
     }
 
     .icon-container {
@@ -449,10 +470,18 @@
       justify-content: center;
       align-items: center;
       width: 130px !important;
-      height: 50px;
+      height: 50px !important;
       border-radius: 15px;
       background-color: var(--white);
       padding: 0 !important;
+    }
+
+    .ctc-word {
+      margin-left: -10px;
+    }
+
+    .ctc-word1 {
+      padding-left: 10px;
     }
   
     section {
@@ -511,15 +540,7 @@
       padding: 0 100px;
     }
 
-    .nav-link {
-      width: 100%;
-      height: 100%;
-      display: flex !important;
-      justify-content: center !important;
-      text-align: center !important;
-      align-items: center !important;
-      font-weight: 600 !important;
-    }
+
 
     .outline {
       box-shadow: var(--box-shadow-light);
@@ -578,9 +599,14 @@
 
     #objectifs{
       max-height: 744px;
-      width: auto;
-      justify-self: center;
+      width: 100%;
+      display: flex;
+      justify-content: center;
       padding: 0 !important;
+    }
+
+    .marginX-lg {
+      padding: 0 30px !important;
     }
 
     #demarche, #concept {
@@ -730,8 +756,17 @@
 
     .back-arrow {
       padding: 10px;
-      margin: 0 5px 0 -5px;
+      margin: 0 5px 0 -20px;
     }
+
+    .ctc-word {
+      padding-left: 15px;
+    }
+
+    .ctc-word1 {
+      padding-left: 10px;
+    }
+  
 
     div > a > .outline:last-child {
       width: 50px;
@@ -835,14 +870,27 @@
       width: 100%;
       display: flex;
       flex-direction: column;
-      margin: 0 8px;
+      margin: 0px;
       border-radius: 10px;
-      height: 400px !important;
+      height: 55% !important;
       padding: 12px 10px;
       justify-content: center;
       align-items: center;
       box-shadow: 1px 0px 15px 1px rgba(0,0,0,0.2);
     }
+
+    .swiper-slide > .footer-links {
+    display: flex;
+    justify-content: center !important;
+    align-items: center !important;
+    margin: 10px !important;
+    background-color: var(--light-blue);
+    height: 50px !important;
+    border-radius: 5px;
+    text-decoration: none;
+    color: var(--dark-grey);
+    font-size: var(--txt-20);
+  }
 
   }
 
@@ -863,5 +911,9 @@
     #question-btn {
       margin-left: -100px;
       width: 300px;
+    }
+
+    .swiper {
+      height: 40% !important;
     }
   }

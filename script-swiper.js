@@ -46,7 +46,7 @@ const swiper = new Swiper('.swiper', {
   threshold: 0,
   toucheReleaseOnEdges: true,
   allowTouchMove: true,
-  cssmode: true,
+  cssmode: true
 });
 
 const sections = document.querySelectorAll('section');

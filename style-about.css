@@ -127,6 +127,7 @@
     padding: 10px !important;
     width: 50px !important;
     height: 50px !important;
+    left: 5%;
   }
   
   .outline::before {
@@ -721,9 +722,7 @@
     }
 
     .nav-item:first-child img {
-      padding: 10px !important;
-      width: 40px;
-      height: 40px;
+      padding: 12px !important;
     }
 
     .outline{
@@ -734,7 +733,18 @@
       box-shadow: var(--nav-item-shadow);
     }
 
-    
+    .back-arrow {
+      padding: 5px !important;
+      margin: 0 5px 0 -10px;
+    }
+
+    .ctc-word1 {
+      margin-left: -10px;
+    }
+
+    .ctc-word {
+      padding-left: 10px;
+    }
 
     #hero-section-about {
       background-position: 13%;
@@ -953,14 +963,18 @@
 .verbatim-txt2::before {
   font-size: var(--txt-84);
   left: 305px;
-  margin-top: -10px;
+  margin-top: -20px;
 }
 
-.verbatim-txt::after,
-.verbatim-txt2::after {
+.verbatim-txt::after {
   font-size: var(--txt-84);
   right: 115px;
-  margin-top: -70px;
+  margin-top: -63px;
+}
+
+.verbatim-txt2::after {
+  right: 112px;
+  margin-top: -105px;
 }
 
 .verbatim-txt, 
@@ -1035,14 +1049,6 @@ justify-content: end !important;
 
     .icon-container {
       width: 120px !important;
-    }
-
-    .ctc-word1 {
-      margin-left: -5px;
-    }
-
-    .ctc-word {
-      padding-left: 10px;
     }
 
     .profile-pic-container {
@@ -1382,23 +1388,23 @@ justify-content: end !important;
 
     .verbatim-txt::before {
       font-size: var(--txt-84);
-      left: 265px;
+      left: 275px;
       margin-top: -20px;
   }
   
     .verbatim-txt2::before {
-      left: 790px;
+      left: 825px;
     }
   
   .verbatim-txt::after {
     font-size: var(--txt-84);
-    right: 125px;
-    margin-top: -90px;
+    right: 150px;
+    margin-top: -95px;
   }
   
   .verbatim-txt2::after {
-    right: 650px;
-    margin-top: -60px;
+    right: 698px;
+    margin-top: -85px;
   }
   
   .verbatim-txt, 

@@ -57,6 +57,7 @@
     --letter-spacing-sm: 1px;
     --box-shadow-section: var(--shadow-color) -1px -2px 7px;
     --txt-shadow-right: var(--salmon-2) 4px 4px 0px;
+    --txt-shadow-left: var(--salmon-2) -4px -4px 0px;
     --nav-item-shadow: var(--shadow-color) 1px 2px 4px;
   }
   
@@ -634,6 +635,7 @@
   color: var(--purple);
   font-weight: 800 !important;
   font-size: var(--txt-16) !important;
+  margin-top: 50px;
 }
 
 .center-icon {
@@ -1106,6 +1108,10 @@ justify-content: end !important;
 
     #group-section-lg section:nth-child(3) {
       order: 3;
+    }
+
+    #metier {
+      margin-top: 0;
     }
 
     #cv {

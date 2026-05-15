@@ -753,3 +753,10 @@ li > .footer-links {
   }
 
 }
+
+#mentions {
+  margin: 0 auto;
+  width: 80%;
+  padding: 10px;
+  white-space: pre-line;
+}
